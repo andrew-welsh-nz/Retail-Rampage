@@ -8,6 +8,7 @@ public class Clothing : MonoBehaviour {
     public bool isCorrectPosition = true;
     public GameObject home;
     Rigidbody2D rb;
+    bool isBeingCarried = false;
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +17,10 @@ public class Clothing : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+	    if(isBeingCarried)
+        {
+            this.transform.position = owner.storeOwner.transform.position;
+        }
 	}
 
     void OnTriggerEnter2D(Collider2D col)
@@ -34,8 +38,21 @@ public class Clothing : MonoBehaviour {
                     {
                         isCorrectPosition = true;
                         owner.AddAtHome();
+                        isBeingCarried = false;
+                        owner.storeOwner.isCarrying = false;
                     }
                 }
+                break;
+            case "Player":
+                {
+                    if(owner.storeOwner.isCarrying == false)
+                    {
+                        isBeingCarried = true;
+                        owner.storeOwner.isCarrying = true;
+                    }
+                }
+                break;
+            default:
                 break;
         }
     }

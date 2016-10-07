@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
     public Store store;
     public float maxSpeed;
     public GameObject interactObject;
+    public bool isCarrying = false;
     Rigidbody2D rb;
 
     // Use this for initialization
