@@ -39,13 +39,14 @@ public class Clothing : MonoBehaviour {
                         isCorrectPosition = true;
                         owner.AddAtHome();
                         isBeingCarried = false;
+                        transform.position = Vector2.Lerp(transform.position, home.transform.position, 10.0f);
                         owner.storeOwner.isCarrying = false;
                     }
                 }
                 break;
             case "Player":
                 {
-                    if(owner.storeOwner.isCarrying == false)
+                    if(owner.storeOwner.isCarrying == false && transform.position != home.transform.position)
                     {
                         isBeingCarried = true;
                         owner.storeOwner.isCarrying = true;
