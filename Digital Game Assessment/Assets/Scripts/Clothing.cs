@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Clothing : MonoBehaviour {
 
+    public Store owner;
     public float knockback;
     public bool isCorrectPosition = true;
     public GameObject home;
@@ -32,6 +33,7 @@ public class Clothing : MonoBehaviour {
                     if(col.gameObject.GetInstanceID() == home.GetInstanceID())
                     {
                         isCorrectPosition = true;
+                        owner.AddAtHome();
                     }
                 }
                 break;
@@ -45,6 +47,7 @@ public class Clothing : MonoBehaviour {
             case "Home":
                 {
                     isCorrectPosition = false;
+                    owner.RemoveAtHome();
                 }
                 break;
         }
