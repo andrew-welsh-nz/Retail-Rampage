@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        rb.velocity = new Vector2(Mathf.Lerp(0, Input.GetAxis("Horizontal") * maxSpeed, 1), Mathf.Lerp(0, Input.GetAxis("Vertical") * maxSpeed, 1));
+        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * maxSpeed, Input.GetAxis("Vertical") * maxSpeed);//Mathf.Lerp(0, Input.GetAxis("Horizontal") * maxSpeed, 2), Mathf.Lerp(0, Input.GetAxis("Vertical") * maxSpeed, 2));
 
         if(Input.GetKeyDown(KeyCode.Space))
         {

@@ -824,7 +824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   store: {fileID: 767390972}
-  maxSpeed: 10
+  maxSpeed: 30
   interactObject: {fileID: 2123939754}
   isCarrying: 0
 --- !u!50 &908777525
@@ -836,7 +836,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 908777521}
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 100
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_IsKinematic: 0
