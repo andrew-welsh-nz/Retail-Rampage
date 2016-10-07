@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+    public Store store;
     public float maxSpeed;
     public GameObject interactObject;
     Rigidbody2D rb;
@@ -10,6 +11,11 @@ public class PlayerController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
+
+        for (int i = 0; i < store.items.Length; ++i)
+        {
+            Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), store.items[i].GetComponent<Collider2D>());
+        }
 	}
 	
 	// Update is called once per frame
