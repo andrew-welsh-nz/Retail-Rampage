@@ -4,6 +4,7 @@ using System.Collections;
 public class Clothing : MonoBehaviour {
 
     public float knockback;
+    public bool isCorrectPosition = true;
     Rigidbody2D rb;
 
 	// Use this for initialization
@@ -18,9 +19,30 @@ public class Clothing : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Interact")
+        switch(col.gameObject.tag)
         {
-            rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
+            case "Interact":
+                {
+                    rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
+                }
+                break;
+            case "Safe":
+                {
+                    isCorrectPosition = true;
+                }
+                break;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        switch(col.gameObject.tag)
+        {
+            case "Safe":
+                {
+                    isCorrectPosition = false;
+                }
+                break;
         }
     }
 }
