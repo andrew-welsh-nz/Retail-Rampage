@@ -21,9 +21,9 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * maxSpeed, Input.GetAxis("Vertical") * maxSpeed);//Mathf.Lerp(0, Input.GetAxis("Horizontal") * maxSpeed, 2), Mathf.Lerp(0, Input.GetAxis("Vertical") * maxSpeed, 2));
+        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * maxSpeed, -Input.GetAxis("Vertical") * maxSpeed);
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetAxis("Interact") == 1)
         {
             Physics2D.IgnoreCollision(interactObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             interactObject.transform.position = transform.position;
