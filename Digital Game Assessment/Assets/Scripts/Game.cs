@@ -11,23 +11,24 @@ public class Game : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         SetText("Draw!");
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	    if(store1.itemsAtHome >  store2.itemsAtHome)
         {
-            SetText("Left Team");
+            SetText("Blue");
         }
         else if(store1.itemsAtHome < store2.itemsAtHome)
         {
-            SetText("Right Team");
+            SetText("Red");
         }
         else if(store1.itemsAtHome == store2.itemsAtHome)
         {
             SetText("Draw!");
         }
-	}
+    }
 
     void SetText(string winningTeam)
     {

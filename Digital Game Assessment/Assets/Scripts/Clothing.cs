@@ -7,13 +7,14 @@ public class Clothing : MonoBehaviour {
     public float knockback;
     public bool isCorrectPosition = true;
     public GameObject home;
+
     Rigidbody2D rb;
     bool isBeingCarried = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         rb = GetComponent<Rigidbody2D>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
