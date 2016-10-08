@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+    public int playerNumber;
     public Store store;
     public float maxSpeed;
     public GameObject interactObject;
@@ -21,13 +22,34 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * maxSpeed, -Input.GetAxis("Vertical") * maxSpeed);
-
-        if(Input.GetAxis("Interact") == 1)
+        switch (playerNumber)
         {
-            Physics2D.IgnoreCollision(interactObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-            interactObject.transform.position = transform.position;
-            interactObject.SetActive(true);
+            case 1:
+                {
+                    rb.velocity = new Vector2(Input.GetAxis("Horizontal") * maxSpeed, Input.GetAxis("Vertical") * maxSpeed);
+
+                    if (Input.GetAxis("Interact") == 1)
+                    {
+                        Physics2D.IgnoreCollision(interactObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                        interactObject.transform.position = transform.position;
+                        interactObject.SetActive(true);
+                    }
+                }
+                break;
+            case 2:
+                {
+                    rb.velocity = new Vector2(Input.GetAxis("Horizontal2") * maxSpeed, Input.GetAxis("Vertical2") * maxSpeed);
+
+                    if (Input.GetAxis("Interact2") == 1)
+                    {
+                        Physics2D.IgnoreCollision(interactObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                        interactObject.transform.position = transform.position;
+                        interactObject.SetActive(true);
+                    }
+                }
+                break;
+            default:
+                break;
         }
 	}
 }
