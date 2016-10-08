@@ -46,10 +46,13 @@ public class Clothing : MonoBehaviour {
                 break;
             case "Player":
                 {
-                    if(owner.storeOwner.isCarrying == false && transform.position != home.transform.position)
+                    if(col.gameObject.GetInstanceID() == owner.storeOwner.pickupTrigger.GetInstanceID())
                     {
-                        isBeingCarried = true;
-                        owner.storeOwner.isCarrying = true;
+                        if (owner.storeOwner.isCarrying == false && transform.position != home.transform.position)
+                        {
+                            isBeingCarried = true;
+                            owner.storeOwner.isCarrying = true;
+                        }
                     }
                 }
                 break;

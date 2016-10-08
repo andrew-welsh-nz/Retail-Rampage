@@ -363,6 +363,11 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
+--- !u!1 &379676787 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010070247902, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+    type: 2}
+  m_PrefabInternal: {fileID: 934528406}
 --- !u!1 &385967047
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,6 +941,11 @@ Prefab:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010741504662, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+        type: 2}
+      propertyPath: pickupTrigger
+      value: 
+      objectReference: {fileID: 1416361469}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8886fbc3c0f6f34ea1bf896b51c3371, type: 2}
   m_IsPrefabParent: 0
@@ -1180,6 +1190,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 393d56905118aaf45b1a521c7df1f081,
         type: 3}
+    - target: {fileID: 114000010741504662, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+        type: 2}
+      propertyPath: pickupTrigger
+      value: 
+      objectReference: {fileID: 379676787}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8886fbc3c0f6f34ea1bf896b51c3371, type: 2}
   m_IsPrefabParent: 0
@@ -1609,6 +1624,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 870d21f78ec39bb42bfad78e7c7e7a63, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1416361469 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010070247902, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+    type: 2}
+  m_PrefabInternal: {fileID: 819067784}
 --- !u!1001 &1486442165
 Prefab:
   m_ObjectHideFlags: 0

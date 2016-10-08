@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
     public float maxSpeed;
     public GameObject interactObject;
     public bool isCarrying = false;
+    public GameObject pickupTrigger;
     Rigidbody2D rb;
 
     // Use this for initialization
