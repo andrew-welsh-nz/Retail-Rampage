@@ -29,7 +29,10 @@ public class Clothing : MonoBehaviour {
         {
             case "Interact":
                 {
-                    rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
+                    if(!isBeingCarried)
+                    {
+                        rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
+                    }
                 }
                 break;
             case "Home":
