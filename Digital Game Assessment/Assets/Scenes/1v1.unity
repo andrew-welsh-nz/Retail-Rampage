@@ -101,7 +101,7 @@ GameObject:
   - 212: {fileID: 79436755}
   - 61: {fileID: 79436754}
   m_Layer: 0
-  m_Name: Wall_Right (1)
+  m_Name: Wall_CenterTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2725,7 +2725,7 @@ GameObject:
   - 212: {fileID: 2074243884}
   - 61: {fileID: 2074243883}
   m_Layer: 0
-  m_Name: Wall_Right (2)
+  m_Name: Wall_CenterBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
