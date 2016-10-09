@@ -10,12 +10,14 @@ public class Clothing : MonoBehaviour {
     public ScreenShake screenShakeCam;
     public float shakeSize;
 
+    AudioSource hitSound;
     Rigidbody2D rb;
     bool isBeingCarried = false;
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
+        hitSound = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -34,6 +36,7 @@ public class Clothing : MonoBehaviour {
                 {
                     if(!isBeingCarried)
                     {
+                        hitSound.Play();
                         rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
                         screenShakeCam.Shake(shakeSize);
                     }
