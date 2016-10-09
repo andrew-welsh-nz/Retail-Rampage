@@ -7,6 +7,8 @@ public class Clothing : MonoBehaviour {
     public float knockback;
     public bool isCorrectPosition = true;
     public GameObject home;
+    public ScreenShake screenShakeCam;
+    public float shakeSize;
 
     Rigidbody2D rb;
     bool isBeingCarried = false;
@@ -33,6 +35,7 @@ public class Clothing : MonoBehaviour {
                     if(!isBeingCarried)
                     {
                         rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
+                        screenShakeCam.Shake(shakeSize);
                     }
                 }
                 break;
