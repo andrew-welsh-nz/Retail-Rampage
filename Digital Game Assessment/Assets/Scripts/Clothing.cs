@@ -13,11 +13,13 @@ public class Clothing : MonoBehaviour {
     AudioSource hitSound;
     Rigidbody2D rb;
     bool isBeingCarried = false;
+    Quaternion startRotation;
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody2D>();
         hitSound = GetComponent<AudioSource>();
+        startRotation = transform.rotation;
     }
 	
 	// Update is called once per frame
@@ -49,7 +51,8 @@ public class Clothing : MonoBehaviour {
                         isCorrectPosition = true;
                         owner.AddAtHome();
                         isBeingCarried = false;
-                        transform.position = Vector2.Lerp(transform.position, home.transform.position, 10.0f);
+                        transform.position = home.transform.position;
+                        transform.rotation = startRotation;
                         owner.storeOwner.isCarrying = false;
                     }
                 }
