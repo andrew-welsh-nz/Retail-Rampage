@@ -16,15 +16,15 @@ public class Game : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if(store1.itemsAtHome >  store2.itemsAtHome)
+	    if(store1.numItemsAtHome >  store2.numItemsAtHome)
         {
             SetText("Blue");
         }
-        else if(store1.itemsAtHome < store2.itemsAtHome)
+        else if(store1.numItemsAtHome < store2.numItemsAtHome)
         {
             SetText("Red");
         }
-        else if(store1.itemsAtHome == store2.itemsAtHome)
+        else if(store1.numItemsAtHome == store2.numItemsAtHome)
         {
             SetText("Draw!");
         }

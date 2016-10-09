@@ -49,7 +49,6 @@ public class Clothing : MonoBehaviour {
                     if(col.gameObject.GetInstanceID() == home.GetInstanceID())
                     {
                         isCorrectPosition = true;
-                        owner.AddAtHome();
                         isBeingCarried = false;
                         transform.position = home.transform.position;
                         transform.rotation = startRotation;
@@ -61,10 +60,11 @@ public class Clothing : MonoBehaviour {
                 {
                     if(col.gameObject.GetInstanceID() == owner.storeOwner.pickupTrigger.GetInstanceID())
                     {
-                        if (owner.storeOwner.isCarrying == false && transform.position != home.transform.position)
+                        if (!owner.storeOwner.isCarrying && transform.position != home.transform.position)
                         {
                             isBeingCarried = true;
                             owner.storeOwner.isCarrying = true;
+                            transform.rotation = startRotation;
                         }
                     }
                 }
@@ -81,7 +81,6 @@ public class Clothing : MonoBehaviour {
             case "Home":
                 {
                     isCorrectPosition = false;
-                    owner.RemoveAtHome();
                 }
                 break;
         }

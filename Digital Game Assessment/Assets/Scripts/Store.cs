@@ -4,16 +4,20 @@ using System.Collections;
 public class Store : MonoBehaviour {
 
     public PlayerController storeOwner;
-    public GameObject[] items = new GameObject[4];
-    public int itemsAtHome;
+    public Clothing[] items = new Clothing[4];
 
-    public void AddAtHome()
-    {
-        itemsAtHome++;
-    }
+    public int numItemsAtHome = 0;
 
-    public void RemoveAtHome()
+    void Update()
     {
-        itemsAtHome--;
+        numItemsAtHome = 0;
+
+        for (int i = 0; i < items.Length; ++i)
+        {
+            if(items[i].isCorrectPosition)
+            {
+                ++numItemsAtHome;
+            }
+        }
     }
 }
