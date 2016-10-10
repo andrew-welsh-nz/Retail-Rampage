@@ -11,17 +11,16 @@ public class Game : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
-	}
+        InvokeRepeating("SpawnCustomer", 10, customerDelay);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        StartCoroutine(SpawnCustomer(customerDelay));
+        
     }
 
-    IEnumerator SpawnCustomer(float _delay)
+    void SpawnCustomer()
     {
-        yield return new WaitForSeconds(_delay);
 
         if (store1.numItemsAtHome > store2.numItemsAtHome)
         {
@@ -46,6 +45,8 @@ public class Game : MonoBehaviour {
 
     void InstantiateCustomer(Store _store)
     {
-        Instantiate(customerPrefab, _store.pathStart.transform);
+        Customer newCustomer = Instantiate(customerPrefab);
+        newCustomer.transform.position = _store.transform.position;
+        newCustomer.pathToFollow = _store.pathStart;
     }
 }

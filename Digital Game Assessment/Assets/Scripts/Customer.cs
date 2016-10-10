@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Customer : MonoBehaviour {
 
-    public Path pathStart;
+    public Path pathToFollow;
 
 	// Use this for initialization
 	void Start () {

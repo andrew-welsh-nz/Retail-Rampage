@@ -56,7 +56,7 @@ public class Clothing : MonoBehaviour {
                     }
                 }
                 break;
-            case "Player":
+            case "PickupTrigger":
                 {
                     if(col.gameObject.GetInstanceID() == owner.storeOwner.pickupTrigger.GetInstanceID())
                     {

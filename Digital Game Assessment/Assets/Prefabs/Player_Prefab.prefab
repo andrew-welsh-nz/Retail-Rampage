@@ -22,7 +22,7 @@ GameObject:
   - 61: {fileID: 61000013137856112}
   m_Layer: 0
   m_Name: PickupTrigger
-  m_TagString: Player
+  m_TagString: PickupTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8941562962f425e459e78cf0b796ffb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
+  playerPrefix: 
   store: {fileID: 0}
   maxSpeed: 30
   interactObject: {fileID: 1000010723025120}
@@ -254,7 +254,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1019429611
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: c25043b2a046a36469cb87f89f5d384b, type: 3}
   m_Color: {r: 0.97794116, g: 0.97794116, b: 0.97794116, a: 1}
   m_FlipX: 0
