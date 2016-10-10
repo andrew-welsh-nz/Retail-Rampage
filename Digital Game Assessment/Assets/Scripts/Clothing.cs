@@ -60,11 +60,14 @@ public class Clothing : MonoBehaviour {
                 {
                     if(col.gameObject.GetInstanceID() == owner.storeOwner.pickupTrigger.GetInstanceID())
                     {
-                        if (!owner.storeOwner.isCarrying && transform.position != home.transform.position)
+                        if(owner.storeOwner.isCarrying == false)
                         {
-                            isBeingCarried = true;
-                            owner.storeOwner.isCarrying = true;
-                            transform.rotation = startRotation;
+                            if (transform.position != home.transform.position)
+                            {
+                                isBeingCarried = true;
+                                owner.storeOwner.isCarrying = true;
+                                transform.rotation = startRotation;
+                            }
                         }
                     }
                 }

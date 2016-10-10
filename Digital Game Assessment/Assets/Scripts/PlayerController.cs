@@ -32,5 +32,14 @@ public class PlayerController : MonoBehaviour {
             interactObject.transform.position = transform.position;
             interactObject.SetActive(true);
         }
+
+        if(isCarrying)
+        {
+            pickupTrigger.SetActive(false);
+        }
+        else
+        {
+            pickupTrigger.SetActive(true);
+        }
     }
 }
