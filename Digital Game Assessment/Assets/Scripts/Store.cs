@@ -5,6 +5,7 @@ public class Store : MonoBehaviour {
 
     public PlayerController storeOwner;
     public Clothing[] items = new Clothing[4];
+    public Path pathStart;
 
     public int numItemsAtHome = 0;
 

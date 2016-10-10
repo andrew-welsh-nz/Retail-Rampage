@@ -6,32 +6,46 @@ public class Game : MonoBehaviour {
 
     public Store store1;
     public Store store2;
-    public Text winningText;
+    public float customerDelay;
+    public Customer customerPrefab;
 
 	// Use this for initialization
 	void Start () {
-        SetText("Draw!");
         
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    if(store1.numItemsAtHome >  store2.numItemsAtHome)
+        StartCoroutine(SpawnCustomer(customerDelay));
+    }
+
+    IEnumerator SpawnCustomer(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+
+        if (store1.numItemsAtHome > store2.numItemsAtHome)
         {
-            SetText("Blue");
+            InstantiateCustomer(store1);
         }
-        else if(store1.numItemsAtHome < store2.numItemsAtHome)
+        else if (store1.numItemsAtHome < store2.numItemsAtHome)
         {
-            SetText("Red");
+            InstantiateCustomer(store2);
         }
-        else if(store1.numItemsAtHome == store2.numItemsAtHome)
+        else if (store1.numItemsAtHome == store2.numItemsAtHome)
         {
-            SetText("Draw!");
+            if(Random.value > 0.5)
+            {
+                InstantiateCustomer(store1);
+            }
+            else
+            {
+                InstantiateCustomer(store2);
+            }
         }
     }
 
-    void SetText(string winningTeam)
+    void InstantiateCustomer(Store _store)
     {
-        winningText.text = "Winning Team: " + winningTeam;
+        Instantiate(customerPrefab, _store.pathStart.transform);
     }
 }
