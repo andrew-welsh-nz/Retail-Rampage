@@ -11,9 +11,12 @@ public class PlayerController : MonoBehaviour {
     public ScreenShake screenShakeCam;
     public float shakeSize;
     public GameObject pickupTrigger;
+    public float stunLength;
+    public float invulnLength;
 
     AudioSource hitSound;
     bool stunned = false;
+    bool invuln = false;
     Rigidbody2D rb;
 
     // Use this for initialization
@@ -59,13 +62,15 @@ public class PlayerController : MonoBehaviour {
         {
             case "Interact":
                 {
-                    if(col.gameObject.GetInstanceID() != interactObject.GetInstanceID() && !stunned)
+                    if(col.gameObject.GetInstanceID() != interactObject.GetInstanceID() && !stunned && !invuln)
                     {
                         stunned = true;
-                        StartCoroutine(Stun(0.5f));
+                        StartCoroutine(Stun(stunLength));
                         rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * 1 * 100, ForceMode2D.Impulse);
                         screenShakeCam.Shake(shakeSize);
                         hitSound.Play();
+                        invuln = true;
+                        StartCoroutine(Invulnerable(invulnLength));
                     }
                 }
                 break;
@@ -78,5 +83,11 @@ public class PlayerController : MonoBehaviour {
     {
         yield return new WaitForSeconds(_delay);
         stunned = false;
+    }
+
+    IEnumerator Invulnerable(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+        invuln = false;
     }
 }

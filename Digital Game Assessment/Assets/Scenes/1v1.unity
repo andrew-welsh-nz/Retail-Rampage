@@ -1004,6 +1004,11 @@ Prefab:
       propertyPath: shakeSize
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 212000013375854752, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1019429611
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8886fbc3c0f6f34ea1bf896b51c3371, type: 2}
   m_IsPrefabParent: 0
