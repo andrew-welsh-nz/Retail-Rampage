@@ -8,7 +8,11 @@ public class PlayerController : MonoBehaviour {
     public float maxSpeed;
     public GameObject interactObject;
     public bool isCarrying = false;
+    public ScreenShake screenShakeCam;
+    public float shakeSize;
     public GameObject pickupTrigger;
+
+    AudioSource hitSound;
     bool stunned = false;
     Rigidbody2D rb;
 
@@ -20,6 +24,8 @@ public class PlayerController : MonoBehaviour {
         {
             Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), store.items[i].GetComponent<Collider2D>());
         }
+
+        hitSound = GetComponent<AudioSource>();
 	}
 
     // Update is called once per frame
@@ -47,20 +53,19 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    // STUN STUFF HAPPENS BELOW HERE
-    // CAN BE REMOVED IF WE DON'T LIKE IT
-
     void OnTriggerEnter2D(Collider2D col)
     {
         switch (col.gameObject.tag)
         {
             case "Interact":
                 {
-                    if (!stunned)
+                    if(col.gameObject.GetInstanceID() != interactObject.GetInstanceID() && !stunned)
                     {
                         stunned = true;
                         StartCoroutine(Stun(0.5f));
                         rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * 1 * 100, ForceMode2D.Impulse);
+                        screenShakeCam.Shake(shakeSize);
+                        hitSound.Play();
                     }
                 }
                 break;

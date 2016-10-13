@@ -994,6 +994,16 @@ Prefab:
       propertyPath: playerPrefix
       value: P1_
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010741504662, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+        type: 2}
+      propertyPath: screenShakeCam
+      value: 
+      objectReference: {fileID: 1686173453}
+    - target: {fileID: 114000010741504662, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+        type: 2}
+      propertyPath: shakeSize
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8886fbc3c0f6f34ea1bf896b51c3371, type: 2}
   m_IsPrefabParent: 0
@@ -1247,6 +1257,20 @@ Prefab:
         type: 2}
       propertyPath: playerPrefix
       value: P2_
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010741504662, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+        type: 2}
+      propertyPath: screenShakeCam
+      value: 
+      objectReference: {fileID: 1686173453}
+    - target: {fileID: 114000010741504662, guid: c8886fbc3c0f6f34ea1bf896b51c3371,
+        type: 2}
+      propertyPath: shakeSize
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010723025120, guid: c8886fbc3c0f6f34ea1bf896b51c3371, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8886fbc3c0f6f34ea1bf896b51c3371, type: 2}
