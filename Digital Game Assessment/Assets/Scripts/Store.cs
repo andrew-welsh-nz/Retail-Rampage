@@ -7,6 +7,8 @@ public class Store : MonoBehaviour {
     public Clothing[] items = new Clothing[4];
     public Transform[] path;
 
+    public int sales = 0;
+
     public int numItemsAtHome = 0;
 
     void Update()

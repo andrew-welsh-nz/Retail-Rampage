@@ -41,4 +41,13 @@ public class Customer : MonoBehaviour {
             }
         }
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Interact" && col.gameObject.GetInstanceID() == store.storeOwner.interactObject.GetInstanceID())
+        {
+            ++store.sales;
+            Destroy(this.gameObject);
+        }
+    }
 }
