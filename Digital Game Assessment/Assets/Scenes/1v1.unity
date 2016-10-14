@@ -2219,6 +2219,7 @@ MonoBehaviour:
   customerDelay: 5
   customerPrefab: {fileID: 114000013621796066, guid: 241fa9e893d815a4c85b99a1947780f8,
     type: 2}
+  gameTimeMins: 5
 --- !u!4 &1533786679
 Transform:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Game : MonoBehaviour {
@@ -8,15 +9,12 @@ public class Game : MonoBehaviour {
     public Store store2;
     public float customerDelay;
     public Customer customerPrefab;
+    public float gameTimeMins;
 
 	// Use this for initialization
 	void Start () {
         InvokeRepeating("SpawnCustomer", 10, customerDelay);
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        
+        Invoke("GameOver", 60);
     }
 
     void SpawnCustomer()
@@ -49,5 +47,24 @@ public class Game : MonoBehaviour {
         newCustomer.transform.position = _store.path[0].position;
         newCustomer.path = _store.path;
         newCustomer.store = _store;
+    }
+
+    void GameOver()
+    {
+        if(store1.sales > store2.sales)
+        {
+            // Go to Blue Wins screen
+            SceneManager.LoadScene("BlueWin");
+        }
+        else if(store1.sales < store2.sales)
+        {
+            // Go to Red Wins screen
+            SceneManager.LoadScene("RedWin");
+        }
+        else if(store1.sales == store2.sales)
+        {
+            // Go to Draw screen
+            SceneManager.LoadScene("Draw");
+        }
     }
 }

@@ -4,11 +4,17 @@ using System.Collections;
 
 public class Menu : MonoBehaviour {
 
-    public string oneVsOne;
+    string oneVsOne = "1v1";
+    string MainMenu = "MainMenu";
 
     public void twoPlayer()
     {
         SceneManager.LoadScene(oneVsOne);
+    }
+
+    public void playAgain()
+    {
+        SceneManager.LoadScene(MainMenu);
     }
 
     public void Quit()
