@@ -21,9 +21,9 @@ GameObject:
   - 4: {fileID: 4000011173138506}
   - 212: {fileID: 212000011451238982}
   - 50: {fileID: 50000011484257446}
-  - 61: {fileID: 61000011427754520}
   - 114: {fileID: 114000010638974186}
   - 82: {fileID: 82000012338185506}
+  - 58: {fileID: 58000014174325306}
   m_Layer: 0
   m_Name: Item_Prefab
   m_TagString: Item
@@ -60,9 +60,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!61 &61000011427754520
-BoxCollider2D:
+  m_Constraints: 4
+--- !u!58 &58000014174325306
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -74,7 +74,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
+  m_Radius: 0.32
 --- !u!82 &82000012338185506
 AudioSource:
   m_ObjectHideFlags: 1

@@ -6,8 +6,11 @@ public class Customer : MonoBehaviour {
     public Transform[] path;
     public int currentPathPosition = 0;
     public float customerSpeed;
+    public float movementPause;
+    public Store store;
 
     Transform target;
+    public bool canMove = true;
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,11 +28,17 @@ public class Customer : MonoBehaviour {
 
     void MoveToPosition()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.position, customerSpeed * Time.deltaTime);
-        if(transform.position == target.position)
+        if(canMove)
         {
-            ++currentPathPosition;
-            target = path[currentPathPosition];
+            transform.position = Vector3.MoveTowards(transform.position, target.position, customerSpeed * Time.deltaTime);
+            if (transform.position == target.position)
+            {
+                ++currentPathPosition;
+                if (currentPathPosition < path.Length)
+                {
+                    target = path[currentPathPosition];
+                }
+            }
         }
     }
 }
