@@ -46,7 +46,7 @@ public class Game : MonoBehaviour {
     void InstantiateCustomer(Store _store)
     {
         Customer newCustomer = Instantiate(customerPrefab);
-        newCustomer.transform.position = _store.transform.position;
-        newCustomer.pathToFollow = _store.pathStart;
+        newCustomer.transform.position = _store.path[0].position;
+        newCustomer.path = _store.path;
     }
 }
