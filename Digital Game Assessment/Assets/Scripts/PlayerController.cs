@@ -34,7 +34,9 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(!stunned)
+        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+
+        if (!stunned)
         {
             rb.velocity = new Vector2(Input.GetAxis(playerPrefix + "Horizontal") * maxSpeed, Input.GetAxis(playerPrefix + "Vertical") * maxSpeed);
 

@@ -24,11 +24,18 @@ public class Clothing : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if(isBeingCarried)
+
+
+        if (isBeingCarried)
         {
+            GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt((transform.position.y * 100f) - 50) * -1;
             this.transform.position = owner.storeOwner.transform.position;
         }
-	}
+        else
+        {
+            GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {

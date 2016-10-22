@@ -14,6 +14,8 @@ public class Customer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+
         if (currentPathPosition < this.path.Length)
         {
             if(target == null)
