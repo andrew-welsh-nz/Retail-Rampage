@@ -3,12 +3,17 @@ using System.Collections;
 
 public class Clothing : MonoBehaviour {
 
-    public Store owner;
-    public float knockback;
+    [SerializeField]
+    private Store owner;
+    [SerializeField]
+    private float knockback;
     public bool isCorrectPosition = true;
-    public GameObject home;
-    public ScreenShake screenShakeCam;
-    public float shakeSize;
+    [SerializeField]
+    private GameObject home;
+    [SerializeField]
+    private ScreenShake screenShakeCam;
+    [SerializeField]
+    private float shakeSize;
 
     AudioSource hitSound;
     Rigidbody2D rb;
