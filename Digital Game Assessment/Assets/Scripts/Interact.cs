@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Interact : MonoBehaviour {
 
-    public float delay;
+    [SerializeField]
+    private float delay;
 
 	// Use this for initialization
 	void Start () {

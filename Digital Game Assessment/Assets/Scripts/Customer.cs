@@ -4,13 +4,16 @@ using System.Collections;
 public class Customer : MonoBehaviour {
 
     public Transform[] path;
-    public int currentPathPosition = 0;
-    public float customerSpeed;
-    public float movementPause;
+    [SerializeField]
+    private int currentPathPosition = 0;
+    [SerializeField]
+    private float customerSpeed;
+    [SerializeField]
+    private float movementPause;
     public Store store;
 
     Transform target;
-    public bool canMove = true;
+    bool canMove = true;
 	
 	// Update is called once per frame
 	void Update () {

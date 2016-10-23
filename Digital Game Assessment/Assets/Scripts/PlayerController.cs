@@ -3,16 +3,23 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-    public string playerPrefix;
-    public Store store;
-    public float maxSpeed;
+    [SerializeField]
+    private string playerPrefix;
+    [SerializeField]
+    private Store store;
+    [SerializeField]
+    private float maxSpeed;
     public GameObject interactObject;
     public bool isCarrying = false;
-    public ScreenShake screenShakeCam;
-    public float shakeSize;
+    [SerializeField]
+    private ScreenShake screenShakeCam;
+    [SerializeField]
+    private float shakeSize;
     public GameObject pickupTrigger;
-    public float stunLength;
-    public float invulnLength;
+    [SerializeField]
+    private float stunLength;
+    [SerializeField]
+    private float invulnLength;
 
     AudioSource hitSound;
     bool stunned = false;

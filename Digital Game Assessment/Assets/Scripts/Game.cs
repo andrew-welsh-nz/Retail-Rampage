@@ -5,11 +5,16 @@ using System.Collections;
 
 public class Game : MonoBehaviour {
 
-    public Store store1;
-    public Store store2;
-    public float customerDelay;
-    public Customer customerPrefab;
-    public float gameTimeMins;
+    [SerializeField]
+    private Store store1;
+    [SerializeField]
+    private Store store2;
+    [SerializeField]
+    private float customerDelay;
+    [SerializeField]
+    private Customer customerPrefab;
+    [SerializeField]
+    private float gameTimeMins;
 
 	// Use this for initialization
 	void Start () {
