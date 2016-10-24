@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour {
     bool stunned = false;
     bool invuln = false;
     Rigidbody2D rb;
+    Animator anim;
 
     // Use this for initialization
     void Start () {
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         hitSound = GetComponent<AudioSource>();
+        anim = GetComponent<Animator>();
 	}
 
     // Update is called once per frame
@@ -46,6 +48,26 @@ public class PlayerController : MonoBehaviour {
         if (!stunned)
         {
             rb.velocity = new Vector2(Input.GetAxis(playerPrefix + "Horizontal") * maxSpeed, Input.GetAxis(playerPrefix + "Vertical") * maxSpeed);
+            if (Input.GetAxis(playerPrefix + "Horizontal") < 0)
+            {
+                anim.SetInteger("Facing", 1);
+            }
+            else if (Input.GetAxis(playerPrefix + "Horizontal") > 0)
+            {
+                anim.SetInteger("Facing", 2);
+            }
+            else if (Input.GetAxis(playerPrefix + "Vertical") > 0)
+            {
+                anim.SetInteger("Facing", 1);
+            }
+            else if (Input.GetAxis(playerPrefix + "Vertical") < 0)
+            {
+                anim.SetInteger("Facing", 2);
+            }
+            else if (Input.GetAxis(playerPrefix + "Horizontal") == 0 && Input.GetAxis(playerPrefix + "Vertical") == 0)
+            {
+                anim.SetInteger("Facing", 0);
+            }
 
             if (Input.GetAxis(playerPrefix + "Interact") == 1)
             {
