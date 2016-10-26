@@ -17,7 +17,10 @@ public class Store : MonoBehaviour {
 
     void Start()
     {
-        scoreText.text = "Sales: " + sales.ToString(); 
+        if(scoreText != null)
+        {
+            scoreText.text = "Sales: " + sales.ToString();
+        }
     }
 
     void Update()

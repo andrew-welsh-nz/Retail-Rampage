@@ -19,7 +19,7 @@ public class Game : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         InvokeRepeating("SpawnCustomer", 10, customerDelay);
-        Invoke("GameOver", 60);
+        Invoke("GameOver", gameTimeMins * 60);
     }
 
     void SpawnCustomer()
