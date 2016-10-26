@@ -51,7 +51,7 @@ public class Customer : MonoBehaviour {
     {
         if(col.gameObject.tag == "Interact" && col.gameObject.GetInstanceID() == store.storeOwner.interactObject.GetInstanceID())
         {
-            ++store.sales;
+            store.AddSale();
             Destroy(this.gameObject);
         }
     }

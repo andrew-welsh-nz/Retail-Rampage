@@ -25,15 +25,15 @@ public class Game : MonoBehaviour {
     void SpawnCustomer()
     {
 
-        if (store1.numItemsAtHome > store2.numItemsAtHome)
+        if (store1.GetItemsAtHome() > store2.GetItemsAtHome())
         {
             InstantiateCustomer(store1);
         }
-        else if (store1.numItemsAtHome < store2.numItemsAtHome)
+        else if (store1.GetItemsAtHome() < store2.GetItemsAtHome())
         {
             InstantiateCustomer(store2);
         }
-        else if (store1.numItemsAtHome == store2.numItemsAtHome)
+        else if (store1.GetItemsAtHome() == store2.GetItemsAtHome())
         {
             if(Random.value > 0.5)
             {
@@ -56,17 +56,17 @@ public class Game : MonoBehaviour {
 
     void GameOver()
     {
-        if(store1.sales > store2.sales)
+        if(store1.GetSales() > store2.GetSales())
         {
             // Go to Blue Wins screen
             SceneManager.LoadScene("BlueWin");
         }
-        else if(store1.sales < store2.sales)
+        else if(store1.GetSales() < store2.GetSales())
         {
             // Go to Red Wins screen
             SceneManager.LoadScene("RedWin");
         }
-        else if(store1.sales == store2.sales)
+        else if(store1.GetSales() == store2.GetSales())
         {
             // Go to Draw screen
             SceneManager.LoadScene("Draw");

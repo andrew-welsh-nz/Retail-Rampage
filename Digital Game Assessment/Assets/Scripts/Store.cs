@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Store : MonoBehaviour {
@@ -7,9 +8,17 @@ public class Store : MonoBehaviour {
     public Clothing[] items = new Clothing[4];
     public Transform[] path;
 
-    public int sales = 0;
+    private int sales = 0;
 
-    public int numItemsAtHome = 0;
+    private int numItemsAtHome = 0;
+
+    [SerializeField]
+    Text scoreText;
+
+    void Start()
+    {
+        scoreText.text = "Sales: " + sales.ToString(); 
+    }
 
     void Update()
     {
@@ -23,4 +32,21 @@ public class Store : MonoBehaviour {
             }
         }
     }
+
+    public int GetSales()
+    {
+        return sales;
+    }
+
+    public void AddSale()
+    {
+        sales++;
+        scoreText.text = "Sales: " + sales.ToString();
+    }
+
+    public int GetItemsAtHome()
+    {
+        return numItemsAtHome;
+    }
+        
 }
