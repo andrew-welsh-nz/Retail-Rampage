@@ -105,6 +105,32 @@ public class PlayerController : MonoBehaviour {
                     }
                 }
                 break;
+
+            case "GameStart":
+                {
+                    col.GetComponent<GameStart>().ReadyP1();
+
+                    switch (playerPrefix)
+                    {
+                        case "P1_":
+                            {
+                                col.GetComponent<GameStart>().ReadyP1();
+                            }
+                            break;
+
+                        case "P2_":
+                            {
+                                col.GetComponent<GameStart>().ReadyP2();
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                }
+                break;
+
             default:
                 break;
         }
