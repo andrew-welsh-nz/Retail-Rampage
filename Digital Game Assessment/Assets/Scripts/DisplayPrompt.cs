@@ -5,6 +5,10 @@ public class DisplayPrompt : MonoBehaviour {
 
     private SpriteRenderer sprite;
 
+    private bool showPrompt = false;
+
+    private GameObject other;
+
 	// Use this for initialization
 	void Start () {
         sprite = GetComponent<SpriteRenderer>();
@@ -12,7 +16,18 @@ public class DisplayPrompt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    if(showPrompt && !other)
+        {
+            sprite.enabled = false;
+        }
+        else if (showPrompt && other)
+        {
+            sprite.enabled = true;
+        }
+        else
+        {
+            sprite.enabled = false;
+        }
 	}
 
     void OnTriggerEnter2D(Collider2D col)
@@ -22,7 +37,9 @@ public class DisplayPrompt : MonoBehaviour {
             case "ButtonPrompt":
                 {
                     //sprite.gameObject.SetActive(true);
-                    sprite.enabled = true;
+                    showPrompt = true;
+
+                    other = col.gameObject;
                 }
                 break;
 
@@ -37,7 +54,9 @@ public class DisplayPrompt : MonoBehaviour {
         {
             case "ButtonPrompt":
                 {
-                    sprite.enabled = false;
+                    showPrompt = false;
+
+                    other = null;
                 }
                 break;
 

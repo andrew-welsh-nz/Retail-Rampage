@@ -44,7 +44,10 @@ public class Store : MonoBehaviour {
     public void AddSale()
     {
         sales++;
-        scoreText.text = "Sales: " + sales.ToString();
+        if(scoreText != null)
+        {
+            scoreText.text = "Sales: " + sales.ToString();
+        }
     }
 
     public int GetItemsAtHome()

@@ -8,8 +8,6 @@ public class Customer : MonoBehaviour {
     private int currentPathPosition = 0;
     [SerializeField]
     private float customerSpeed;
-    [SerializeField]
-    private float movementPause;
     public Store store;
 
     Transform target;
