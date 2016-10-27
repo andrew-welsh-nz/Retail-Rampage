@@ -14,12 +14,24 @@ public class Game : MonoBehaviour {
     [SerializeField]
     private Customer customerPrefab;
     [SerializeField]
-    private float gameTimeMins;
+    private int salesTarget;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         InvokeRepeating("SpawnCustomer", 10, customerDelay);
-        Invoke("GameOver", gameTimeMins * 60);
+    }
+
+    void Update()
+    {
+        if(store1.GetSales() == salesTarget)
+        {
+            SceneManager.LoadScene("BlueWin");
+        }
+        else if(store2.GetSales() == salesTarget)
+        {
+            SceneManager.LoadScene("RedWin");
+        }
     }
 
     void SpawnCustomer()
@@ -52,24 +64,5 @@ public class Game : MonoBehaviour {
         newCustomer.transform.position = _store.path[0].position;
         newCustomer.path = _store.path;
         newCustomer.store = _store;
-    }
-
-    void GameOver()
-    {
-        if(store1.GetSales() > store2.GetSales())
-        {
-            // Go to Blue Wins screen
-            SceneManager.LoadScene("BlueWin");
-        }
-        else if(store1.GetSales() < store2.GetSales())
-        {
-            // Go to Red Wins screen
-            SceneManager.LoadScene("RedWin");
-        }
-        else if(store1.GetSales() == store2.GetSales())
-        {
-            // Go to Draw screen
-            SceneManager.LoadScene("Draw");
-        }
     }
 }

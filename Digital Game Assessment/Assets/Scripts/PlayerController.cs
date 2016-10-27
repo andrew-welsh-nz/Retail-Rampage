@@ -108,8 +108,6 @@ public class PlayerController : MonoBehaviour {
 
             case "GameStart":
                 {
-                    col.GetComponent<GameStart>().ReadyP1();
-
                     switch (playerPrefix)
                     {
                         case "P1_":
@@ -132,6 +130,34 @@ public class PlayerController : MonoBehaviour {
                 break;
 
             default:
+                break;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        switch (col.gameObject.tag)
+        {
+            case "GameStart":
+                {
+                    switch (playerPrefix)
+                    {
+                        case "P1_":
+                            {
+                                col.GetComponent<GameStart>().UnReadyP1();
+                            }
+                            break;
+
+                        case "P2_":
+                            {
+                                col.GetComponent<GameStart>().UnReadyP2();
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+                }
                 break;
         }
     }
