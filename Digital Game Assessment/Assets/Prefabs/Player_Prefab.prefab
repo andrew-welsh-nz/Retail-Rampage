@@ -56,9 +56,9 @@ GameObject:
   - 212: {fileID: 212000013375854752}
   - 50: {fileID: 50000013488401880}
   - 114: {fileID: 114000010741504662}
-  - 61: {fileID: 61000011060152948}
   - 82: {fileID: 82000012597788554}
   - 95: {fileID: 95000011763750088}
+  - 60: {fileID: 60000013693290292}
   m_Layer: 0
   m_Name: Player_Prefab
   m_TagString: Player
@@ -138,8 +138,8 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.34
---- !u!61 &61000011060152948
-BoxCollider2D:
+--- !u!60 &60000013693290292
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -149,9 +149,15 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.0018186569, y: -0.15824503}
-  serializedVersion: 2
-  m_Size: {x: 0.89828795, y: 0.32356536}
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.2526178, y: 0.1999818}
+      - {x: -0.44807434, y: -0.101795}
+      - {x: -0.32, y: -0.32}
+      - {x: 0.32, y: -0.32}
+      - {x: 0.4480743, y: -0.10179504}
+      - {x: 0.25261784, y: 0.1999818}
 --- !u!61 &61000013137856112
 BoxCollider2D:
   m_ObjectHideFlags: 1

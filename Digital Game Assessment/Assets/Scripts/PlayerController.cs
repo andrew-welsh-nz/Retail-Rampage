@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 
         for (int i = 0; i < store.items.Length; ++i)
         {
-            Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), store.items[i].GetComponent<Collider2D>());
+            Physics2D.IgnoreCollision(this.GetComponent<PolygonCollider2D>(), store.items[i].GetComponent<Collider2D>());
         }
 
         hitSound = GetComponent<AudioSource>();
