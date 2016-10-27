@@ -10,6 +10,7 @@ TagManager:
   - PickupTrigger
   - Customer
   - GameStart
+  - ButtonPrompt
   layers:
   - Default
   - TransparentFX
