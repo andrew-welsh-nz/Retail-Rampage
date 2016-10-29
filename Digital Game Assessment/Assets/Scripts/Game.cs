@@ -15,6 +15,8 @@ public class Game : MonoBehaviour {
     private Customer customerPrefab;
     [SerializeField]
     private int salesTarget;
+    [SerializeField]
+    private WinManager winners;
 
 	// Use this for initialization
 	void Start ()
@@ -26,11 +28,21 @@ public class Game : MonoBehaviour {
     {
         if(store1.GetSales() == salesTarget)
         {
-            SceneManager.LoadScene("BlueWin");
+            winners.gameObject.transform.position = new Vector2(0, 0);
+            winners.ShowBlue();
+            Time.timeScale = 0.5f;
+
+            StartCoroutine(WaitAndLeave(2));
+            //SceneManager.LoadScene("BlueWin");
         }
         else if(store2.GetSales() == salesTarget)
         {
-            SceneManager.LoadScene("RedWin");
+            winners.gameObject.transform.position = new Vector2(0, 0);
+            winners.ShowBlue();
+            Time.timeScale = 0.5f;
+
+            StartCoroutine(WaitAndLeave(2));
+            //SceneManager.LoadScene("RedWin");
         }
     }
 
@@ -64,5 +76,12 @@ public class Game : MonoBehaviour {
         newCustomer.transform.position = _store.path[0].position;
         newCustomer.path = _store.path;
         newCustomer.store = _store;
+    }
+
+    IEnumerator WaitAndLeave(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("MainMenu");
     }
 }
