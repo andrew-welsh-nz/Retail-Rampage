@@ -7,6 +7,10 @@ public class Store : MonoBehaviour {
     public PlayerController storeOwner;
     public Clothing[] items = new Clothing[4];
     public Transform[] path;
+    [SerializeField]
+    private Transform cashPosition;
+    [SerializeField]
+    private GameObject cashObject;
 
     private int sales = 0;
 
@@ -48,6 +52,10 @@ public class Store : MonoBehaviour {
         {
             scoreText.text = "Sales: " + sales.ToString();
         }
+
+        GameObject newCashMoney = Instantiate(cashObject);
+        newCashMoney.transform.position = cashPosition.transform.position;
+        newCashMoney = null;
     }
 
     public int GetItemsAtHome()
