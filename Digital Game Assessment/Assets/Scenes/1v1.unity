@@ -3205,6 +3205,8 @@ MonoBehaviour:
     type: 2}
   salesTarget: 2
   winners: {fileID: 1779518065}
+  screenShakeCam: {fileID: 1686173453}
+  shakeSize: 0.1
 --- !u!4 &1533786679
 Transform:
   m_ObjectHideFlags: 0

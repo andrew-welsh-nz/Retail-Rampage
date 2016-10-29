@@ -18,6 +18,11 @@ public class Game : MonoBehaviour {
     [SerializeField]
     private WinManager winners;
 
+    [SerializeField]
+    private ScreenShake screenShakeCam;
+    [SerializeField]
+    private float shakeSize;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -76,6 +81,8 @@ public class Game : MonoBehaviour {
         newCustomer.transform.position = _store.path[0].position;
         newCustomer.path = _store.path;
         newCustomer.store = _store;
+        newCustomer.screenShakeCam = screenShakeCam;
+        newCustomer.shakeSize = shakeSize;
     }
 
     IEnumerator WaitAndLeave(float _delay)

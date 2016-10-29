@@ -15,6 +15,9 @@ public class Customer : MonoBehaviour {
     [SerializeField]
     private Store currentStore;
 
+    public ScreenShake screenShakeCam;
+    public float shakeSize;
+
     Transform target;
     bool canMove = true;
 	
@@ -66,6 +69,8 @@ public class Customer : MonoBehaviour {
                 particles.Emit(5);
 
                 particles.transform.parent = null;
+
+                screenShakeCam.Shake(shakeSize);
 
                 currentStore.AddSale();
                 Destroy(this.gameObject);
