@@ -9,7 +9,8 @@ public class GameStart : MonoBehaviour {
     [SerializeField]
     bool PTwoReady;
 
-    string onevsone = "1v1";
+    [SerializeField]
+    string Destination = "1v1";
 
 	// Use this for initialization
 	void Start () {
@@ -50,7 +51,14 @@ public class GameStart : MonoBehaviour {
 
         if (POneReady && PTwoReady)
         {
-            SceneManager.LoadScene(onevsone);
+            if(Destination == "QUIT")
+            {
+                Application.Quit();
+            }
+            else
+            {
+                SceneManager.LoadScene(Destination);
+            }
         }
     }
 }

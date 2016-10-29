@@ -3,30 +3,33 @@ using System.Collections;
 
 public class DisplayPrompt : MonoBehaviour {
 
-    private SpriteRenderer sprite;
+    [SerializeField]
+    private GameObject sprite;
 
+    private bool inArea = false;
     private bool showPrompt = false;
 
     private GameObject other;
 
 	// Use this for initialization
 	void Start () {
-        sprite = GetComponent<SpriteRenderer>();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    if(showPrompt && !other)
+        if(inArea)
         {
-            sprite.enabled = false;
+            StartCoroutine(Wait(2.0f));
         }
-        else if (showPrompt && other)
+
+        if (showPrompt)
         {
-            sprite.enabled = true;
+            sprite.SetActive(true);
         }
         else
         {
-            sprite.enabled = false;
+            sprite.SetActive(false);
         }
 	}
 
@@ -36,9 +39,7 @@ public class DisplayPrompt : MonoBehaviour {
         {
             case "ButtonPrompt":
                 {
-                    showPrompt = true;
-
-                    other = col.gameObject;
+                    inArea = true;
                 }
                 break;
 
@@ -55,12 +56,22 @@ public class DisplayPrompt : MonoBehaviour {
                 {
                     showPrompt = false;
 
-                    other = null;
+                    inArea = false;
                 }
                 break;
 
             default:
                 break;
+        }
+    }
+
+    IEnumerator Wait(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+
+        if (inArea)
+        {
+            showPrompt = true;
         }
     }
 }
