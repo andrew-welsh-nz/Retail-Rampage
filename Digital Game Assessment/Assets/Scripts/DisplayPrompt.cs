@@ -23,7 +23,7 @@ public class DisplayPrompt : MonoBehaviour {
             StartCoroutine(Wait(2.0f));
         }
 
-        if (showPrompt)
+        if (showPrompt && other != null)
         {
             sprite.SetActive(true);
         }
@@ -40,6 +40,8 @@ public class DisplayPrompt : MonoBehaviour {
             case "ButtonPrompt":
                 {
                     inArea = true;
+
+                    other = col.gameObject;
                 }
                 break;
 
@@ -57,6 +59,8 @@ public class DisplayPrompt : MonoBehaviour {
                     showPrompt = false;
 
                     inArea = false;
+
+                    other = null;
                 }
                 break;
 
@@ -69,7 +73,7 @@ public class DisplayPrompt : MonoBehaviour {
     {
         yield return new WaitForSeconds(_delay);
 
-        if (inArea)
+        if (inArea && other != null)
         {
             showPrompt = true;
         }
