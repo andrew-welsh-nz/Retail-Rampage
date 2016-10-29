@@ -12,6 +12,7 @@ public class Customer : MonoBehaviour {
     private float customerSpeed;
     public Store store;
 
+    [SerializeField]
     private Store currentStore;
 
     Transform target;
@@ -56,7 +57,7 @@ public class Customer : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Interact" && currentStore != null)//col.gameObject.GetInstanceID() == store.storeOwner.interactObject.GetInstanceID())
+        if(col.gameObject.tag == "Interact" && currentStore != null)
         {
             if(col.gameObject.GetInstanceID() == currentStore.storeOwner.interactObject.GetInstanceID())
             {
