@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour {
     private float stunLength;
     [SerializeField]
     private float invulnLength;
+    [SerializeField]
+    private ParticleSystem dust;
 
     AudioSource hitSound;
     bool stunned = false;
@@ -50,23 +52,46 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = new Vector2(Input.GetAxis(playerPrefix + "Horizontal") * maxSpeed, Input.GetAxis(playerPrefix + "Vertical") * maxSpeed);
             if (Input.GetAxis(playerPrefix + "Horizontal") < 0)
             {
+                if (!dust.isPlaying)
+                {
+                    dust.Play();
+                }
                 anim.SetInteger("Facing", 1);
+                dust.transform.rotation = Quaternion.AngleAxis(90, Vector3.up);
             }
             else if (Input.GetAxis(playerPrefix + "Horizontal") > 0)
             {
+                if (!dust.isPlaying)
+                {
+                    dust.Play();
+                }
                 anim.SetInteger("Facing", 2);
+                dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
             }
             else if (Input.GetAxis(playerPrefix + "Vertical") > 0)
             {
+                if (!dust.isPlaying)
+                {
+                    dust.Play();
+                }
                 anim.SetInteger("Facing", 1);
+                dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
+                dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.left);
             }
             else if (Input.GetAxis(playerPrefix + "Vertical") < 0)
             {
+                if (!dust.isPlaying)
+                {
+                    dust.Play();
+                }
                 anim.SetInteger("Facing", 2);
+                dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
+                dust.transform.rotation = Quaternion.AngleAxis(90, Vector3.left);
             }
             else if (Input.GetAxis(playerPrefix + "Horizontal") == 0 && Input.GetAxis(playerPrefix + "Vertical") == 0)
             {
                 anim.SetInteger("Facing", 0);
+                dust.Stop();
             }
 
             if (Input.GetAxis(playerPrefix + "Interact") == 1)

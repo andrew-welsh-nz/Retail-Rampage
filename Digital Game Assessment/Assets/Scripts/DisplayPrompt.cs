@@ -36,7 +36,6 @@ public class DisplayPrompt : MonoBehaviour {
         {
             case "ButtonPrompt":
                 {
-                    //sprite.gameObject.SetActive(true);
                     showPrompt = true;
 
                     other = col.gameObject;
