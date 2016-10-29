@@ -7,6 +7,7 @@ public class Store : MonoBehaviour {
     public PlayerController storeOwner;
     public Clothing[] items = new Clothing[4];
     public Transform[] path;
+    public GameObject salesFloor;
     [SerializeField]
     private Transform cashPosition;
     [SerializeField]

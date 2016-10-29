@@ -12,6 +12,8 @@ public class Customer : MonoBehaviour {
     private float customerSpeed;
     public Store store;
 
+    private Store currentStore;
+
     Transform target;
     bool canMove = true;
 	
@@ -54,16 +56,32 @@ public class Customer : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Interact" && col.gameObject.GetInstanceID() == store.storeOwner.interactObject.GetInstanceID())
+        if(col.gameObject.tag == "Interact" && currentStore != null)//col.gameObject.GetInstanceID() == store.storeOwner.interactObject.GetInstanceID())
         {
-            particles.gameObject.SetActive(true);
+            if(col.gameObject.GetInstanceID() == currentStore.storeOwner.interactObject.GetInstanceID())
+            {
+                particles.gameObject.SetActive(true);
 
-            particles.Emit(5);
+                particles.Emit(5);
 
-            particles.transform.parent = null;
+                particles.transform.parent = null;
 
-            store.AddSale();
-            Destroy(this.gameObject);
+                currentStore.AddSale();
+                Destroy(this.gameObject);
+            }
+        }
+
+        if(col.gameObject.tag == "SalesFloor")
+        {
+            currentStore = col.GetComponent<SalesFloor>().GetStore();
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "SalesFloor")
+        {
+            currentStore = null;
         }
     }
 }
