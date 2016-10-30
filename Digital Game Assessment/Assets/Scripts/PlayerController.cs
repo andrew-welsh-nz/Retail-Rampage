@@ -198,4 +198,9 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(_delay);
         invuln = false;
     }
+
+    public Store GetStore()
+    {
+        return store;
+    }
 }

@@ -12,12 +12,17 @@ public class ParticleAutoDestroy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if(particle)
+	    if(particle && !transform.parent)
         {
             if(!particle.IsAlive())
             {
                 Destroy(gameObject);
             }
+        }
+
+        if(transform.parent)
+        {
+            transform.position = transform.parent.position;
         }
 	}
 }

@@ -12,7 +12,13 @@ public class Game : MonoBehaviour {
     [SerializeField]
     private float customerDelay;
     [SerializeField]
+    private float specialCustomerDelay;
+    [SerializeField]
+    private Transform specialCustomerSpawn;
+    [SerializeField]
     private Customer customerPrefab;
+    [SerializeField]
+    private SpecialCustomer specialCustomerPrefab;
     [SerializeField]
     private int salesTarget;
     [SerializeField]
@@ -27,6 +33,7 @@ public class Game : MonoBehaviour {
 	void Start ()
     {
         InvokeRepeating("SpawnCustomer", 10, customerDelay);
+        InvokeRepeating("SpawnSpecialCustomer", specialCustomerDelay, specialCustomerDelay);
     }
 
     void Update()
@@ -73,6 +80,14 @@ public class Game : MonoBehaviour {
                 InstantiateCustomer(store2);
             }
         }
+    }
+
+    void SpawnSpecialCustomer()
+    {
+        SpecialCustomer newSpecialCustomer = Instantiate(specialCustomerPrefab);
+        newSpecialCustomer.transform.position = specialCustomerSpawn.transform.position;
+        newSpecialCustomer.screenShakeCam = screenShakeCam;
+        newSpecialCustomer.shakeSize = shakeSize;
     }
 
     void InstantiateCustomer(Store _store)

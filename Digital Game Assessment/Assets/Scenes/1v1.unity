@@ -3201,9 +3201,13 @@ MonoBehaviour:
   store1: {fileID: 767390972}
   store2: {fileID: 2041998991}
   customerDelay: 5
+  specialCustomerDelay: 30
+  specialCustomerSpawn: {fileID: 1930057427}
   customerPrefab: {fileID: 114000013621796066, guid: 241fa9e893d815a4c85b99a1947780f8,
     type: 2}
-  salesTarget: 2
+  specialCustomerPrefab: {fileID: 114000010049965992, guid: 5988cfe17637ab940b43ab6accefaaa3,
+    type: 2}
+  salesTarget: 15
   winners: {fileID: 1779518065}
   screenShakeCam: {fileID: 1686173453}
   shakeSize: 0.1
@@ -4221,6 +4225,34 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000011560416764, guid: 870d21f78ec39bb42bfad78e7c7e7a63,
     type: 2}
   m_PrefabInternal: {fileID: 1927279010}
+--- !u!1 &1930057426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1930057427}
+  m_Layer: 0
+  m_Name: SpecialCustomerSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1930057427
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930057426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &1980481652
 GameObject:
   m_ObjectHideFlags: 0
