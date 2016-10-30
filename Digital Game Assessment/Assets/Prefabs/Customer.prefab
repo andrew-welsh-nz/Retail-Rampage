@@ -134,6 +134,8 @@ MonoBehaviour:
   customerSpeed: 2
   store: {fileID: 0}
   currentStore: {fileID: 0}
+  screenShakeCam: {fileID: 0}
+  shakeSize: 0
 --- !u!198 &198000012798081960
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -347,7 +349,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.92941177, b: 0, a: 1}
       minMaxState: 0
     startSize:
       scalar: 0.25
@@ -1891,7 +1893,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: d29b18fc00745be46939daaaf61bd512, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
