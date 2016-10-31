@@ -228,7 +228,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Char_Idle
-  m_Speed: 2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000011089152268}
@@ -241,7 +241,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2297417f200f9944e8794ee372897368, type: 2}
+  m_Motion: {fileID: 7400000, guid: 85132a1126f1a5c47ac88b54c2b536e5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
