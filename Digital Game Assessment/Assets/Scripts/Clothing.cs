@@ -50,6 +50,7 @@ public class Clothing : MonoBehaviour {
                 {
                     if(!isBeingCarried)
                     {
+                        StartCoroutine(FreezeGame(0.05f));
                         hitSound.Play();
                         rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
                         screenShakeCam.Shake(shakeSize);
@@ -99,5 +100,16 @@ public class Clothing : MonoBehaviour {
                 }
                 break;
         }
+    }
+
+    IEnumerator FreezeGame(float _delay)
+    {
+        Time.timeScale = 0.0f;
+        float pauseEndTime = Time.realtimeSinceStartup + _delay;
+        while(Time.realtimeSinceStartup < pauseEndTime)
+        {
+            yield return 0;
+        }
+        Time.timeScale = 1.0f;
     }
 }
