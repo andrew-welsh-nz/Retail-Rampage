@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 87f0dc28ca48a0b42b6d4b17bddc95e0
-timeCreated: 1477902898
+timeCreated: 1477961724
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -93,7 +93,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: 1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -108,7 +108,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 72
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
@@ -122,10 +122,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -133,12 +133,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 240
+        x: 241
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -146,12 +146,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 486
+        x: 482
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -159,12 +159,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 729
+        x: 723
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -172,12 +172,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 972
+        x: 964
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -185,12 +185,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 1215
+        x: 1205
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -198,12 +198,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 1458
+        x: 1446
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -211,12 +211,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 1701
+        x: 1687
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -224,12 +224,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 1928
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -237,12 +237,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 2187
+        x: 2169
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -250,12 +250,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 2430
+        x: 2410
         y: 1405
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -265,10 +265,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -276,12 +276,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 243
+        x: 241
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -289,12 +289,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 486
+        x: 482
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -302,12 +302,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 729
+        x: 723
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -315,12 +315,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 972
+        x: 964
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -328,12 +328,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_16
       rect:
         serializedVersion: 2
-        x: 1215
+        x: 1205
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -341,12 +341,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_17
       rect:
         serializedVersion: 2
-        x: 1458
+        x: 1446
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -354,12 +354,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_18
       rect:
         serializedVersion: 2
-        x: 1701
+        x: 1687
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -367,12 +367,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_19
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 1928
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -380,12 +380,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_20
       rect:
         serializedVersion: 2
-        x: 2187
+        x: 2169
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -393,12 +393,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_21
       rect:
         serializedVersion: 2
-        x: 2430
+        x: 2410
         y: 1124
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -408,10 +408,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -419,12 +419,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_23
       rect:
         serializedVersion: 2
-        x: 243
+        x: 241
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -432,12 +432,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_24
       rect:
         serializedVersion: 2
-        x: 486
+        x: 482
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -445,12 +445,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_25
       rect:
         serializedVersion: 2
-        x: 729
+        x: 723
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -458,12 +458,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_26
       rect:
         serializedVersion: 2
-        x: 972
+        x: 964
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -471,12 +471,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_27
       rect:
         serializedVersion: 2
-        x: 1215
+        x: 1205
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -484,12 +484,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_28
       rect:
         serializedVersion: 2
-        x: 1458
+        x: 1446
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -497,12 +497,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_29
       rect:
         serializedVersion: 2
-        x: 1701
+        x: 1687
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -510,12 +510,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_30
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 1928
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -523,12 +523,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_31
       rect:
         serializedVersion: 2
-        x: 2187
+        x: 2169
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -536,12 +536,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_32
       rect:
         serializedVersion: 2
-        x: 2430
+        x: 2410
         y: 843
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -551,10 +551,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -562,12 +562,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_34
       rect:
         serializedVersion: 2
-        x: 243
+        x: 241
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -575,12 +575,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_35
       rect:
         serializedVersion: 2
-        x: 486
+        x: 482
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -588,12 +588,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_36
       rect:
         serializedVersion: 2
-        x: 729
+        x: 723
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -601,12 +601,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_37
       rect:
         serializedVersion: 2
-        x: 972
+        x: 964
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -614,12 +614,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_38
       rect:
         serializedVersion: 2
-        x: 1215
+        x: 1205
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -627,12 +627,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_39
       rect:
         serializedVersion: 2
-        x: 1458
+        x: 1446
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -640,12 +640,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_40
       rect:
         serializedVersion: 2
-        x: 1701
+        x: 1687
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -653,12 +653,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_41
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 1928
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -666,12 +666,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_42
       rect:
         serializedVersion: 2
-        x: 2187
+        x: 2169
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -679,12 +679,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_43
       rect:
         serializedVersion: 2
-        x: 2430
+        x: 2410
         y: 562
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -694,10 +694,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -705,12 +705,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_45
       rect:
         serializedVersion: 2
-        x: 243
+        x: 241
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -718,12 +718,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_46
       rect:
         serializedVersion: 2
-        x: 486
+        x: 482
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -731,12 +731,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_47
       rect:
         serializedVersion: 2
-        x: 729
+        x: 723
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -744,12 +744,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_48
       rect:
         serializedVersion: 2
-        x: 972
+        x: 964
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -757,12 +757,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_49
       rect:
         serializedVersion: 2
-        x: 1215
+        x: 1205
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -770,12 +770,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_50
       rect:
         serializedVersion: 2
-        x: 1458
+        x: 1446
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -783,12 +783,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_51
       rect:
         serializedVersion: 2
-        x: 1701
+        x: 1687
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -796,12 +796,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_52
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 1928
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -809,12 +809,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_53
       rect:
         serializedVersion: 2
-        x: 2187
+        x: 2169
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -822,12 +822,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_54
       rect:
         serializedVersion: 2
-        x: 2430
+        x: 2410
         y: 281
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -837,10 +837,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -848,12 +848,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_56
       rect:
         serializedVersion: 2
-        x: 243
+        x: 241
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -861,12 +861,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_57
       rect:
         serializedVersion: 2
-        x: 486
+        x: 482
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -874,12 +874,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_58
       rect:
         serializedVersion: 2
-        x: 729
+        x: 723
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -887,12 +887,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_59
       rect:
         serializedVersion: 2
-        x: 972
+        x: 964
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -900,12 +900,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_60
       rect:
         serializedVersion: 2
-        x: 1215
+        x: 1205
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -913,12 +913,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_61
       rect:
         serializedVersion: 2
-        x: 1458
+        x: 1446
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -926,12 +926,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_62
       rect:
         serializedVersion: 2
-        x: 1701
+        x: 1687
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -939,12 +939,12 @@ TextureImporter:
       name: Base_Idle-SpriteSheet_63
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 1928
         y: 0
-        width: 218
+        width: 216
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

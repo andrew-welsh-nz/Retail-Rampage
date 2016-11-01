@@ -17,6 +17,8 @@ public class SpecialCustomer : MonoBehaviour
     public ScreenShake screenShakeCam;
     public float shakeSize;
 
+    public Game game;
+
     void Start()
     {
         particles.gameObject.SetActive(false);
@@ -29,6 +31,8 @@ public class SpecialCustomer : MonoBehaviour
 
         if(totalsales <= 0)
         {
+            game.currentSpecialCustomer = null;
+
             Destroy(this.gameObject);
         }
     }

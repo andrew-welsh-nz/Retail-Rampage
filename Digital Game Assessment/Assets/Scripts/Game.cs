@@ -29,6 +29,8 @@ public class Game : MonoBehaviour {
     [SerializeField]
     private float shakeSize;
 
+    public SpecialCustomer currentSpecialCustomer;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -50,7 +52,7 @@ public class Game : MonoBehaviour {
         else if(store2.GetSales() == salesTarget)
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
-            winners.ShowBlue();
+            winners.ShowRed();
             Time.timeScale = 0.5f;
 
             StartCoroutine(WaitAndLeave(2));
@@ -84,10 +86,16 @@ public class Game : MonoBehaviour {
 
     void SpawnSpecialCustomer()
     {
-        SpecialCustomer newSpecialCustomer = Instantiate(specialCustomerPrefab);
-        newSpecialCustomer.transform.position = specialCustomerSpawn.transform.position;
-        newSpecialCustomer.screenShakeCam = screenShakeCam;
-        newSpecialCustomer.shakeSize = shakeSize;
+        if (currentSpecialCustomer == null)
+        {
+            SpecialCustomer newSpecialCustomer = Instantiate(specialCustomerPrefab);
+            newSpecialCustomer.transform.position = specialCustomerSpawn.transform.position;
+            newSpecialCustomer.screenShakeCam = screenShakeCam;
+            newSpecialCustomer.shakeSize = shakeSize;
+
+            currentSpecialCustomer = newSpecialCustomer;
+            currentSpecialCustomer.game = this;
+        }
     }
 
     void InstantiateCustomer(Store _store)
