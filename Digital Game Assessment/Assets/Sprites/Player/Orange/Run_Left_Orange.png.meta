@@ -1,0 +1,1095 @@
+fileFormatVersion: 2
+guid: 1fe87203de2c5a2498f587d48877cd54
+timeCreated: 1478163872
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Run_Left_Orange_0
+    21300002: Run_Left_Orange_1
+    21300004: Run_Left_Orange_2
+    21300006: Run_Left_Orange_3
+    21300008: Run_Left_Orange_4
+    21300010: Run_Left_Orange_5
+    21300012: Run_Left_Orange_6
+    21300014: Run_Left_Orange_7
+    21300016: Run_Left_Orange_8
+    21300018: Run_Left_Orange_9
+    21300020: Run_Left_Orange_10
+    21300022: Run_Left_Orange_11
+    21300024: Run_Left_Orange_12
+    21300026: Run_Left_Orange_13
+    21300028: Run_Left_Orange_14
+    21300030: Run_Left_Orange_15
+    21300032: Run_Left_Orange_16
+    21300034: Run_Left_Orange_17
+    21300036: Run_Left_Orange_18
+    21300038: Run_Left_Orange_19
+    21300040: Run_Left_Orange_20
+    21300042: Run_Left_Orange_21
+    21300044: Run_Left_Orange_22
+    21300046: Run_Left_Orange_23
+    21300048: Run_Left_Orange_24
+    21300050: Run_Left_Orange_25
+    21300052: Run_Left_Orange_26
+    21300054: Run_Left_Orange_27
+    21300056: Run_Left_Orange_28
+    21300058: Run_Left_Orange_29
+    21300060: Run_Left_Orange_30
+    21300062: Run_Left_Orange_31
+    21300064: Run_Left_Orange_32
+    21300066: Run_Left_Orange_33
+    21300068: Run_Left_Orange_34
+    21300070: Run_Left_Orange_35
+    21300072: Run_Left_Orange_36
+    21300074: Run_Left_Orange_37
+    21300076: Run_Left_Orange_38
+    21300078: Run_Left_Orange_39
+    21300080: Run_Left_Orange_40
+    21300082: Run_Left_Orange_41
+    21300084: Run_Left_Orange_42
+    21300086: Run_Left_Orange_43
+    21300088: Run_Left_Orange_44
+    21300090: Run_Left_Orange_45
+    21300092: Run_Left_Orange_46
+    21300094: Run_Left_Orange_47
+    21300096: Run_Left_Orange_48
+    21300098: Run_Left_Orange_49
+    21300100: Run_Left_Orange_50
+    21300102: Run_Left_Orange_51
+    21300104: Run_Left_Orange_52
+    21300106: Run_Left_Orange_53
+    21300108: Run_Left_Orange_54
+    21300110: Run_Left_Orange_55
+    21300112: Run_Left_Orange_56
+    21300114: Run_Left_Orange_57
+    21300116: Run_Left_Orange_58
+    21300118: Run_Left_Orange_59
+    21300120: Run_Left_Orange_60
+    21300122: Run_Left_Orange_61
+    21300124: Run_Left_Orange_62
+    21300126: Run_Left_Orange_63
+    21300128: Run_Left_Orange_64
+    21300130: Run_Left_Orange_65
+    21300132: Run_Left_Orange_66
+    21300134: Run_Left_Orange_67
+    21300136: Run_Left_Orange_68
+    21300138: Run_Left_Orange_69
+    21300140: Run_Left_Orange_70
+    21300142: Run_Left_Orange_71
+    21300144: Run_Left_Orange_72
+    21300146: Run_Left_Orange_73
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Run_Left_Orange_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_2
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_3
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_4
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_5
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_6
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_7
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_8
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_9
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_10
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_11
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_12
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 1420
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_15
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_16
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_17
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_18
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_19
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_20
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_21
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_22
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_23
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_24
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_25
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 1136
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_27
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_28
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_29
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_30
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_31
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_32
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_33
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_34
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_35
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_36
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_37
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_38
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 852
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_40
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_41
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_42
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_43
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_44
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_45
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_46
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_47
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_48
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_49
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_50
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_51
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 568
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_53
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_54
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_55
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_56
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_57
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_58
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_59
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_60
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_61
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_62
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_63
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 284
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_65
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_66
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_67
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_68
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_69
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_70
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_71
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_72
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Run_Left_Orange_73
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 0
+        width: 256
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
