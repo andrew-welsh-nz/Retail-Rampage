@@ -40,7 +40,7 @@ public class Game : MonoBehaviour {
 
     void Update()
     {
-        if(store1.GetSales() == salesTarget)
+        if(store1.GetSales() >= salesTarget)
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowBlue();
@@ -49,7 +49,7 @@ public class Game : MonoBehaviour {
             StartCoroutine(WaitAndLeave(2));
             //SceneManager.LoadScene("BlueWin");
         }
-        else if(store2.GetSales() == salesTarget)
+        else if(store2.GetSales() >= salesTarget)
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowRed();
