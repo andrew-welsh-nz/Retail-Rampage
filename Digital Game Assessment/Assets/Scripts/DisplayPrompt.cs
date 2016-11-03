@@ -9,11 +9,18 @@ public class DisplayPrompt : MonoBehaviour {
     private bool inArea = false;
     private bool showPrompt = false;
 
+    [SerializeField]
+    Sprite arrow;
+    [SerializeField]
+    Sprite prompt;
+
+    SpriteRenderer spriteRender;
+
     private GameObject other;
 
 	// Use this for initialization
 	void Start () {
-
+        spriteRender = sprite.GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -25,11 +32,11 @@ public class DisplayPrompt : MonoBehaviour {
 
         if (showPrompt && other != null)
         {
-            sprite.SetActive(true);
+            spriteRender.sprite = prompt;
         }
         else
         {
-            sprite.SetActive(false);
+            spriteRender.sprite = arrow;
         }
 	}
 

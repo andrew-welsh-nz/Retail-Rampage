@@ -1208,6 +1208,11 @@ Prefab:
       propertyPath: dust
       value: 
       objectReference: {fileID: 1304358992}
+    - target: {fileID: 95000011012392554, guid: 725f46421ad709343b47e777e2895410,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5497025d53bde2d4e94748ff6ba113d9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 725f46421ad709343b47e777e2895410, type: 2}
   m_IsPrefabParent: 0
@@ -2459,6 +2464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 2119540906}
+  arrow: {fileID: 21300000, guid: 9da57d3630364574280d63b79d64b65d, type: 3}
+  prompt: {fileID: 21300000, guid: 393d56905118aaf45b1a521c7df1f081, type: 3}
 --- !u!1 &1337239489 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011560416764, guid: 870d21f78ec39bb42bfad78e7c7e7a63,
@@ -3140,6 +3147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 763306967}
+  arrow: {fileID: 21300000, guid: e37e6e6bfc86d18479de95875b19230a, type: 3}
+  prompt: {fileID: 21300000, guid: 393d56905118aaf45b1a521c7df1f081, type: 3}
 --- !u!1 &1631168956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,6 +3406,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95000011012392554, guid: 725f46421ad709343b47e777e2895410,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5497025d53bde2d4e94748ff6ba113d9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 725f46421ad709343b47e777e2895410, type: 2}
   m_IsPrefabParent: 0

@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 1e29547423198e040808c6fc04c65474
+timeCreated: 1478161009
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Main_Menu-Sprite_Sheet_0
+    21300002: Main_Menu-Sprite_Sheet_1
+    21300004: Main_Menu-Sprite_Sheet_2
+    21300006: Main_Menu-Sprite_Sheet_3
+    21300008: Main_Menu-Sprite_Sheet_4
+    21300010: Main_Menu-Sprite_Sheet_5
+    21300012: Main_Menu-Sprite_Sheet_6
+    21300014: Main_Menu-Sprite_Sheet_7
+    21300016: Main_Menu-Sprite_Sheet_8
+    21300018: Main_Menu-Sprite_Sheet_9
+    21300020: Main_Menu-Sprite_Sheet_10
+    21300022: Main_Menu-Sprite_Sheet_11
+    21300024: Main_Menu-Sprite_Sheet_12
+    21300026: Main_Menu-Sprite_Sheet_13
+    21300028: Main_Menu-Sprite_Sheet_14
+    21300030: Main_Menu-Sprite_Sheet_15
+    21300032: Main_Menu-Sprite_Sheet_16
+    21300034: Main_Menu-Sprite_Sheet_17
+    21300036: Main_Menu-Sprite_Sheet_18
+    21300038: Main_Menu-Sprite_Sheet_19
+    21300040: Main_Menu-Sprite_Sheet_20
+    21300042: Main_Menu-Sprite_Sheet_21
+    21300044: Main_Menu-Sprite_Sheet_22
+    21300046: Main_Menu-Sprite_Sheet_23
+    21300048: Main_Menu-Sprite_Sheet_24
+    21300050: Main_Menu-Sprite_Sheet_25
+    21300052: Main_Menu-Sprite_Sheet_26
+    21300054: Main_Menu-Sprite_Sheet_27
+    21300056: Main_Menu-Sprite_Sheet_28
+    21300058: Main_Menu-Sprite_Sheet_29
+    21300060: Main_Menu-Sprite_Sheet_30
+    21300062: Main_Menu-Sprite_Sheet_31
+    21300064: Main_Menu-Sprite_Sheet_32
+    21300066: Main_Menu-Sprite_Sheet_33
+    21300068: Main_Menu-Sprite_Sheet_34
+    21300070: Main_Menu-Sprite_Sheet_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1405
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1405
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1405
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1405
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1405
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1405
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1405
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1124
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1124
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1124
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1124
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1124
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1124
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1124
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 843
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 843
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 843
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 843
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 843
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 843
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 843
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 562
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 562
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 562
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 562
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 562
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 281
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 281
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 281
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 281
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Main_Menu-Sprite_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 0
+        width: 218
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
