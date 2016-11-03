@@ -20,11 +20,25 @@ public class Clothing : MonoBehaviour {
     bool isBeingCarried = false;
     Quaternion startRotation;
 
+    SpriteRenderer spriteRender;
+
+    [SerializeField]
+    Sprite spriteNormal;
+    [SerializeField]
+    Sprite spriteOffPosition;
+
     // Use this for initialization
     void Start () {
+        Vector3 scale = new Vector3(0.15f, 0.15f, 1f);
+
+        transform.localScale = scale;
+
         rb = GetComponent<Rigidbody2D>();
         hitSound = GetComponent<AudioSource>();
         startRotation = transform.rotation;
+        spriteRender = GetComponent <SpriteRenderer>();
+
+        spriteRender.sprite = spriteNormal;
     }
 	
 	// Update is called once per frame
@@ -33,11 +47,20 @@ public class Clothing : MonoBehaviour {
 
         if (isBeingCarried)
         {
+            spriteRender.sprite = spriteNormal;
             GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt((transform.position.y * 100f) - 50) * -1;
             this.transform.position = owner.storeOwner.transform.position;
         }
         else
         {
+            if(!isCorrectPosition)
+            {
+                spriteRender.sprite = spriteOffPosition;
+            }
+            else
+            {
+                spriteRender.sprite = spriteNormal;
+            }
             GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
         }
     }
