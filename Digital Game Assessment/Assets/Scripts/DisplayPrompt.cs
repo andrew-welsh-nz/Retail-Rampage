@@ -32,10 +32,12 @@ public class DisplayPrompt : MonoBehaviour {
 
         if (showPrompt && other != null)
         {
+            sprite.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             spriteRender.sprite = prompt;
         }
         else
         {
+            sprite.transform.localScale = new Vector3(1, 1, 1);
             spriteRender.sprite = arrow;
         }
 	}
