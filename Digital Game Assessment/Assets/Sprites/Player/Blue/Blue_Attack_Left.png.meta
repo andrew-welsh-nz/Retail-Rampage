@@ -1,0 +1,759 @@
+fileFormatVersion: 2
+guid: 5f1e99e2b832a4842990a370fc6da966
+timeCreated: 1478383525
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Blue_Attack_Left_0
+    21300002: Blue_Attack_Left_1
+    21300004: Blue_Attack_Left_2
+    21300006: Blue_Attack_Left_3
+    21300008: Blue_Attack_Left_4
+    21300010: Blue_Attack_Left_5
+    21300012: Blue_Attack_Left_6
+    21300014: Blue_Attack_Left_7
+    21300016: Blue_Attack_Left_8
+    21300018: Blue_Attack_Left_9
+    21300020: Blue_Attack_Left_10
+    21300022: Blue_Attack_Left_11
+    21300024: Blue_Attack_Left_12
+    21300026: Blue_Attack_Left_13
+    21300028: Blue_Attack_Left_14
+    21300030: Blue_Attack_Left_15
+    21300032: Blue_Attack_Left_16
+    21300034: Blue_Attack_Left_17
+    21300036: Blue_Attack_Left_18
+    21300038: Blue_Attack_Left_19
+    21300040: Blue_Attack_Left_20
+    21300042: Blue_Attack_Left_21
+    21300044: Blue_Attack_Left_22
+    21300046: Blue_Attack_Left_23
+    21300048: Blue_Attack_Left_24
+    21300050: Blue_Attack_Left_25
+    21300052: Blue_Attack_Left_26
+    21300054: Blue_Attack_Left_27
+    21300056: Blue_Attack_Left_28
+    21300058: Blue_Attack_Left_29
+    21300060: Blue_Attack_Left_30
+    21300062: Blue_Attack_Left_31
+    21300064: Blue_Attack_Left_32
+    21300066: Blue_Attack_Left_33
+    21300068: Blue_Attack_Left_34
+    21300070: Blue_Attack_Left_35
+    21300072: Blue_Attack_Left_36
+    21300074: Blue_Attack_Left_37
+    21300076: Blue_Attack_Left_38
+    21300078: Blue_Attack_Left_39
+    21300080: Blue_Attack_Left_40
+    21300082: Blue_Attack_Left_41
+    21300084: Blue_Attack_Left_42
+    21300086: Blue_Attack_Left_43
+    21300088: Blue_Attack_Left_44
+    21300090: Blue_Attack_Left_45
+    21300092: Blue_Attack_Left_46
+    21300094: Blue_Attack_Left_47
+    21300096: Blue_Attack_Left_48
+    21300098: Blue_Attack_Left_49
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blue_Attack_Left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_2
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_3
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_4
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_5
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_6
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_7
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1686
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1405
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_9
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1405
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_10
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1405
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_11
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1405
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_12
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1405
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_13
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1405
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_14
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1405
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1124
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1124
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_17
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1124
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_18
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1124
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_19
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1124
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_20
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1124
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_21
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1124
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 843
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_23
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 843
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_24
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 843
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_25
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 843
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_26
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 843
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_27
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 843
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_28
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 843
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 562
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_30
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 562
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_31
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 562
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_32
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 562
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_33
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 562
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_34
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 562
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_35
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 562
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_37
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 281
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_38
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 281
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_39
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 281
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_40
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 281
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_41
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 281
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_42
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 281
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_44
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_45
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_46
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_47
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_48
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue_Attack_Left_49
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
