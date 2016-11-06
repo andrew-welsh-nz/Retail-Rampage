@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour {
                     dust.Play();
                 }
                 anim.SetInteger("Facing", 1);
+                anim.SetBool("LastFacing", false);
                 dust.transform.rotation = Quaternion.AngleAxis(90, Vector3.up);
             }
             else if (Input.GetAxis(playerPrefix + "Horizontal") > 0)
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour {
                     dust.Play();
                 }
                 anim.SetInteger("Facing", 2);
+                anim.SetBool("LastFacing", true);
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
             }
             else if (Input.GetAxis(playerPrefix + "Vertical") > 0)
@@ -75,6 +77,7 @@ public class PlayerController : MonoBehaviour {
                     dust.Play();
                 }
                 anim.SetInteger("Facing", 1);
+                anim.SetBool("LastFacing", false);
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.left);
             }
@@ -85,6 +88,7 @@ public class PlayerController : MonoBehaviour {
                     dust.Play();
                 }
                 anim.SetInteger("Facing", 2);
+                anim.SetBool("LastFacing", true);
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
                 dust.transform.rotation = Quaternion.AngleAxis(90, Vector3.left);
             }
@@ -99,6 +103,7 @@ public class PlayerController : MonoBehaviour {
                 Physics2D.IgnoreCollision(interactObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
                 interactObject.transform.position = transform.position;
                 interactObject.SetActive(true);
+                anim.SetTrigger("Hit");
             }
 
             if (isCarrying)
