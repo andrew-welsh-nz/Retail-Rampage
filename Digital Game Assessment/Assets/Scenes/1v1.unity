@@ -5533,7 +5533,7 @@ MonoBehaviour:
     type: 2}
   specialCustomerPrefab: {fileID: 114000010049965992, guid: 5988cfe17637ab940b43ab6accefaaa3,
     type: 2}
-  salesTarget: 1
+  salesTarget: 15
   winners: {fileID: 1779518065}
   screenShakeCam: {fileID: 1686173453}
   shakeSize: 0.1
