@@ -29,6 +29,9 @@ public class Game : MonoBehaviour {
     [SerializeField]
     private float shakeSize;
 
+    [SerializeField]
+    private AudioSource audio;
+
     public SpecialCustomer currentSpecialCustomer;
 
 	// Use this for initialization
@@ -45,18 +48,18 @@ public class Game : MonoBehaviour {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowBlue();
             Time.timeScale = 0.5f;
+            audio.pitch -= 0.005f;
 
             StartCoroutine(WaitAndLeave(2));
-            //SceneManager.LoadScene("BlueWin");
         }
         else if(store2.GetSales() >= salesTarget)
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowRed();
             Time.timeScale = 0.5f;
+            audio.pitch -= 0.005f;
 
             StartCoroutine(WaitAndLeave(2));
-            //SceneManager.LoadScene("RedWin");
         }
     }
 
@@ -112,6 +115,7 @@ public class Game : MonoBehaviour {
     {
         yield return new WaitForSeconds(_delay);
         Time.timeScale = 1.0f;
+        audio.pitch = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }
 }

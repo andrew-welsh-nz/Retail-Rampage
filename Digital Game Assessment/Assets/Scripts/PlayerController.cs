@@ -101,7 +101,11 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetAxis(playerPrefix + "Interact") == 1)
             {
                 Physics2D.IgnoreCollision(interactObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-                StartCoroutine(InteractPause(0.3f));
+                //StartCoroutine(InteractPause(0.3f));
+
+                interactObject.transform.position = transform.position;
+                interactObject.SetActive(true);
+
                 anim.SetBool("IsHitting", true);
                 StartCoroutine(HitAnimPause(0.55f));
             }
@@ -125,6 +129,17 @@ public class PlayerController : MonoBehaviour {
                 {
                     if(col.gameObject.GetInstanceID() != interactObject.GetInstanceID() && !stunned && !invuln)
                     {
+                        if(col.transform.position.x > this.transform.position.x)
+                        {
+                            anim.SetBool("WasHit", true);
+                            anim.SetBool("HitDirection", true);
+                        }
+                        else if(col.transform.position.x < this.transform.position.x)
+                        {
+                            anim.SetBool("WasHit", true);
+                            anim.SetBool("HitDirection", false);
+                        }
+
                         stunned = true;
                         StartCoroutine(Stun(stunLength));
                         rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * 1 * 100, ForceMode2D.Impulse);
