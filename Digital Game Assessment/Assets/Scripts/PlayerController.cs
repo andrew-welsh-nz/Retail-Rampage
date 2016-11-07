@@ -101,7 +101,6 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetAxis(playerPrefix + "Interact") == 1)
             {
                 Physics2D.IgnoreCollision(interactObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-                //StartCoroutine(InteractPause(0.3f));
 
                 interactObject.transform.position = transform.position;
                 interactObject.SetActive(true);
@@ -223,13 +222,6 @@ public class PlayerController : MonoBehaviour {
     {
         yield return new WaitForSeconds(_delay);
         anim.SetBool("IsHitting", false);
-    }
-
-    IEnumerator InteractPause(float _delay)
-    {
-        yield return new WaitForSeconds(_delay);
-        interactObject.transform.position = transform.position;
-        interactObject.SetActive(true);
     }
 
     public Store GetStore()
