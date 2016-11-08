@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour {
                 interactObject.SetActive(true);
 
                 anim.SetBool("IsHitting", true);
-                StartCoroutine(HitAnimPause(0.55f));
+                StartCoroutine(HitAnimPause(0.25f));
             }
 
             if (isCarrying)
