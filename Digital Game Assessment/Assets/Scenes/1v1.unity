@@ -4080,7 +4080,7 @@ Prefab:
         type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: db5128579b250484cbfb638f4725f751, type: 2}
+      objectReference: {fileID: 9100000, guid: 2fafeac7f66b9504797c40113fd18dc4, type: 2}
     - target: {fileID: 4000012098579456, guid: 725f46421ad709343b47e777e2895410, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.55
