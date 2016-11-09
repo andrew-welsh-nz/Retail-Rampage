@@ -22,12 +22,16 @@ public class Customer : MonoBehaviour {
     bool canMove = true;
 
     Animator anim;
+
+    AudioSource sound;
 	
     void Start()
     {
         particles.gameObject.SetActive(false);
 
         anim = GetComponent<Animator>();
+
+        sound = GetComponent<AudioSource>();
     }
 
 	// Update is called once per frame
@@ -71,6 +75,8 @@ public class Customer : MonoBehaviour {
         {
             if(col.gameObject.GetInstanceID() == currentStore.storeOwner.interactObject.GetInstanceID())
             {
+                sound.Play();
+
                 particles.gameObject.SetActive(true);
 
                 particles.Emit(5);
@@ -80,7 +86,8 @@ public class Customer : MonoBehaviour {
                 screenShakeCam.Shake(shakeSize);
 
                 currentStore.AddSale();
-                Destroy(this.gameObject);
+
+                StartCoroutine(WaitAndDestroy(sound.clip.length));
             }
         }
 
@@ -96,5 +103,11 @@ public class Customer : MonoBehaviour {
         {
             currentStore = null;
         }
+    }
+
+    IEnumerator WaitAndDestroy(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+        Destroy(this.gameObject);
     }
 }

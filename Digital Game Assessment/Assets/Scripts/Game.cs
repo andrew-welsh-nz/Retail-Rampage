@@ -32,7 +32,7 @@ public class Game : MonoBehaviour {
     private float shakeSize;
 
     [SerializeField]
-    private AudioSource audio;
+    private AudioSource sound;
 
     public SpecialCustomer currentSpecialCustomer;
 
@@ -59,12 +59,12 @@ public class Game : MonoBehaviour {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowBlue();
             Time.timeScale = 0.5f;
-            if (audio.pitch > 0.0f)
+            if (sound.pitch > 0.0f)
             {
-                audio.pitch -= 0.5f * Time.deltaTime;
-                if(audio.pitch < 0.0f)
+                sound.pitch -= 0.5f * Time.deltaTime;
+                if(sound.pitch < 0.0f)
                 {
-                    audio.pitch = 0.0f;
+                    sound.pitch = 0.0f;
                 }
             }
 
@@ -78,12 +78,12 @@ public class Game : MonoBehaviour {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowRed();
             Time.timeScale = 0.5f;
-            if (audio.pitch > 0.0f)
+            if (sound.pitch > 0.0f)
             {
-                audio.pitch -= 0.5f * Time.deltaTime;
-                if (audio.pitch < 0.0f)
+                sound.pitch -= 0.5f * Time.deltaTime;
+                if (sound.pitch < 0.0f)
                 {
-                    audio.pitch = 0.0f;
+                    sound.pitch = 0.0f;
                 }
             }
 
@@ -156,8 +156,8 @@ public class Game : MonoBehaviour {
     {
         yield return new WaitForSeconds(_delay);
         Time.timeScale = 1.0f;
-        audio.Stop();
-        audio.pitch = 1.0f;
+        sound.Stop();
+        sound.pitch = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }
 }

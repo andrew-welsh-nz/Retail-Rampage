@@ -19,9 +19,13 @@ public class SpecialCustomer : MonoBehaviour
 
     public Game game;
 
+    AudioSource sound;
+
     void Start()
     {
         particles.gameObject.SetActive(false);
+
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,8 @@ public class SpecialCustomer : MonoBehaviour
     {
         if (col.gameObject.tag == "Interact" && canBuy)
         {
+            sound.Play();
+
             particles.gameObject.SetActive(true);
 
             particles.Emit(5);
