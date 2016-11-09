@@ -322,6 +322,7 @@ GameObject:
   - 124: {fileID: 164037360}
   - 81: {fileID: 164037359}
   - 114: {fileID: 164037364}
+  - 114: {fileID: 164037365}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -410,6 +411,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeSize: 0.25
   dampingFactor: 2
+--- !u!114 &164037365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164037358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16610928b881a194a9f50eac517b6e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeIn: 1
+  fadeOut: 0
+  fadeTexture: {fileID: 2800000, guid: f88e2b55155826541bfe986a6f57d5ed, type: 3}
+  alpha: 1
 --- !u!1001 &213479668
 Prefab:
   m_ObjectHideFlags: 0
