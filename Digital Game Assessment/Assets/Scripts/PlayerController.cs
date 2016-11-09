@@ -23,11 +23,19 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private ParticleSystem dust;
 
+    [SerializeField]
+    Animator Michael;
+    [SerializeField]
+    Animator Lucy;
+
     AudioSource hitSound;
     bool stunned = false;
     bool invuln = false;
     Rigidbody2D rb;
     Animator anim;
+
+    static bool P1UseMichael;
+    static bool P2UseLucy;
 
     // Use this for initialization
     void Start () {
@@ -40,6 +48,15 @@ public class PlayerController : MonoBehaviour {
 
         hitSound = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+
+        if(P1UseMichael && playerPrefix == "P1_")
+        {
+            anim = Michael;
+        }
+        else if(P2UseLucy && playerPrefix == "P2_")
+        {
+            anim = Lucy;
+        }
 	}
 
     // Update is called once per frame
