@@ -6097,6 +6097,7 @@ MonoBehaviour:
   fadeIn: 1
   fadeOut: 0
   fadeTexture: {fileID: 2800000, guid: f88e2b55155826541bfe986a6f57d5ed, type: 3}
+  alpha: 1
 --- !u!1 &1705937503
 GameObject:
   m_ObjectHideFlags: 0
