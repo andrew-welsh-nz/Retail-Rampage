@@ -20,10 +20,14 @@ public class Customer : MonoBehaviour {
 
     Transform target;
     bool canMove = true;
+
+    Animator anim;
 	
     void Start()
     {
         particles.gameObject.SetActive(false);
+
+        anim = GetComponent<Animator>();
     }
 
 	// Update is called once per frame
@@ -35,10 +39,13 @@ public class Customer : MonoBehaviour {
             if(target == null)
             {
                 target = path[currentPathPosition];
-                
             }
 
             MoveToPosition();
+        }
+        else
+        {
+            anim.SetBool("HasMoved", true);
         }
 	}
 

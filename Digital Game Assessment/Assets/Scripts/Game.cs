@@ -16,7 +16,9 @@ public class Game : MonoBehaviour {
     [SerializeField]
     private Transform specialCustomerSpawn;
     [SerializeField]
-    private Customer customerPrefab;
+    private Customer customerPrefabMale;
+    [SerializeField]
+    private Customer customerPrefabFemale;
     [SerializeField]
     private SpecialCustomer specialCustomerPrefab;
     [SerializeField]
@@ -56,8 +58,8 @@ public class Game : MonoBehaviour {
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowBlue();
-            //Time.timeScale = 0.5f;
-            if(audio.pitch > 0.0f)
+            Time.timeScale = 0.5f;
+            if (audio.pitch > 0.0f)
             {
                 audio.pitch -= 0.5f * Time.deltaTime;
                 if(audio.pitch < 0.0f)
@@ -75,7 +77,7 @@ public class Game : MonoBehaviour {
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowRed();
-            //Time.timeScale = 0.5f;
+            Time.timeScale = 0.5f;
             if (audio.pitch > 0.0f)
             {
                 audio.pitch -= 0.5f * Time.deltaTime;
@@ -132,7 +134,17 @@ public class Game : MonoBehaviour {
 
     void InstantiateCustomer(Store _store)
     {
-        Customer newCustomer = Instantiate(customerPrefab);
+        Customer newCustomer;
+
+        if (Random.value > 0.5)
+        {
+            newCustomer = Instantiate(customerPrefabMale);
+        }
+        else
+        {
+            newCustomer = Instantiate(customerPrefabFemale);
+        }
+        
         newCustomer.transform.position = _store.path[0].position;
         newCustomer.path = _store.path;
         newCustomer.store = _store;

@@ -29,7 +29,7 @@ public class Clothing : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Vector3 scale = new Vector3(0.085f, 0.085f, 1f);
+        Vector3 scale = new Vector3(0.1f, 0.1f, 1f);
 
         transform.localScale = scale;
 
