@@ -34,8 +34,12 @@ public class PlayerController : MonoBehaviour {
     Rigidbody2D rb;
     Animator anim;
 
+    [SerializeField]
     static bool P1UseMichael;
+    [SerializeField]
     static bool P2UseLucy;
+
+    bool CanChange = true;
 
     // Use this for initialization
     void Start () {
@@ -190,6 +194,48 @@ public class PlayerController : MonoBehaviour {
                 }
                 break;
 
+            case "SwapCharacter":
+                {
+                    switch (playerPrefix)
+                    {
+                        case "P1_":
+                            {
+                                if(P1UseMichael && CanChange)
+                                {
+                                    Debug.Log("Off");
+                                    P1UseMichael = false;
+                                    StartCoroutine(AbleToChange(1));
+                                }
+                                else if(!P1UseMichael && CanChange)
+                                {
+                                    Debug.Log("On");
+                                    P1UseMichael = true;
+                                    StartCoroutine(AbleToChange(1));
+                                }
+                            }
+                            break;
+
+                        case "P2_":
+                            {
+                                if(P2UseLucy && CanChange)
+                                {
+                                    P2UseLucy = false;
+                                    StartCoroutine(AbleToChange(1));
+                                }
+                                else if(!P2UseLucy && CanChange)
+                                {
+                                    P2UseLucy = true;
+                                    StartCoroutine(AbleToChange(1));
+                                }
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+                }
+                break;
+
             default:
                 break;
         }
@@ -239,6 +285,13 @@ public class PlayerController : MonoBehaviour {
     {
         yield return new WaitForSeconds(_delay);
         anim.SetBool("IsHitting", false);
+    }
+
+    IEnumerator AbleToChange(float _delay)
+    {
+        CanChange = false;
+        yield return new WaitForSeconds(_delay);
+        CanChange = true;
     }
 
     public Store GetStore()

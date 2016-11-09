@@ -12,6 +12,7 @@ TagManager:
   - GameStart
   - ButtonPrompt
   - SalesFloor
+  - SwapCharacter
   layers:
   - Default
   - TransparentFX
