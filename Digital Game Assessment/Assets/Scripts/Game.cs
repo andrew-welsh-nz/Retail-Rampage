@@ -48,7 +48,14 @@ public class Game : MonoBehaviour {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowBlue();
             Time.timeScale = 0.5f;
-            audio.pitch -= 0.005f;
+            if(audio.pitch > 0.0f)
+            {
+                audio.pitch -= 0.5f * Time.deltaTime;
+                if(audio.pitch < 0.0f)
+                {
+                    audio.pitch = 0.0f;
+                }
+            }
 
             StartCoroutine(WaitAndLeave(2));
         }
@@ -57,7 +64,14 @@ public class Game : MonoBehaviour {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowRed();
             Time.timeScale = 0.5f;
-            audio.pitch -= 0.005f;
+            if (audio.pitch > 0.0f)
+            {
+                audio.pitch -= 0.5f * Time.deltaTime;
+                if (audio.pitch < 0.0f)
+                {
+                    audio.pitch = 0.0f;
+                }
+            }
 
             StartCoroutine(WaitAndLeave(2));
         }
