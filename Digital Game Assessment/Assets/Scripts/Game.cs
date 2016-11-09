@@ -34,6 +34,10 @@ public class Game : MonoBehaviour {
 
     public SpecialCustomer currentSpecialCustomer;
 
+    public ScreenTransition fade;
+
+    bool GameOver = false;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -43,11 +47,16 @@ public class Game : MonoBehaviour {
 
     void Update()
     {
-        if(store1.GetSales() >= salesTarget)
+        if(store1.GetSales() >= salesTarget || store2.GetSales() >= salesTarget)
+        {
+            GameOver = true;
+        }
+
+        if(store1.GetSales() >= salesTarget && GameOver == true)
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowBlue();
-            Time.timeScale = 0.5f;
+            //Time.timeScale = 0.5f;
             if(audio.pitch > 0.0f)
             {
                 audio.pitch -= 0.5f * Time.deltaTime;
@@ -57,13 +66,16 @@ public class Game : MonoBehaviour {
                 }
             }
 
+            fade.fadeOut = true;
+            fade.alpha = 0.0f;
+
             StartCoroutine(WaitAndLeave(2));
         }
-        else if(store2.GetSales() >= salesTarget)
+        else if(store2.GetSales() >= salesTarget && GameOver == true)
         {
             winners.gameObject.transform.position = new Vector2(0, 0);
             winners.ShowRed();
-            Time.timeScale = 0.5f;
+            //Time.timeScale = 0.5f;
             if (audio.pitch > 0.0f)
             {
                 audio.pitch -= 0.5f * Time.deltaTime;
@@ -72,6 +84,9 @@ public class Game : MonoBehaviour {
                     audio.pitch = 0.0f;
                 }
             }
+
+            fade.fadeOut = true;
+            fade.alpha = 0.0f;
 
             StartCoroutine(WaitAndLeave(2));
         }

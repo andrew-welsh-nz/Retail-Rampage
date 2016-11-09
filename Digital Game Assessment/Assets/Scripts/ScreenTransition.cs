@@ -4,73 +4,47 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class ScreenTransition : MonoBehaviour {
+    public bool fadeIn = true;
+    public bool fadeOut = false;
 
-    public static ScreenTransition instance;
+    [SerializeField]
+    Texture2D fadeTexture;
+    float fadeSpeed = 0.75f;
+    int fadeDepth = -1000;
 
-    public float fadeTime = 1.0f;
+    public float alpha = 1.0f;
 
-    public bool fadeIn;
-    public bool fadeOut;
-
-    public Image fadeImage;
-
-    float time = 0.0f;
-
-    void Awake()
-    {
-        if(instance == null)
-        {
-            DontDestroyOnLoad(transform.gameObject);
-            instance = this;
-            if(fadeIn)
-            {
-                fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, 1.0f);
-            }
-            else
-            {
-                Destroy(transform.gameObject);
-            }
-        }
-    }
-
-    void OnEnable()
+    void OnGUI()
     {
         if(fadeIn)
         {
-            StartCoroutine(StartScene());
+            alpha -= fadeSpeed * Time.deltaTime;
+
+            GUI.color = new Color(0, 0, 0, alpha);
+
+            GUI.depth = fadeDepth;
+
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
+
+            if(alpha <= 0)
+            {
+                fadeIn = false;
+            }
         }
-    }
-
-    public void LoadScene(string level)
-    {
-        StartCoroutine(EndScene(level));
-    }
-
-    IEnumerator StartScene()
-    {
-        time = 1.0f;
-        yield return null;
-        while (time >= 0.0f)
+        else if(fadeOut)
         {
-            fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, time);
-            time -= Time.deltaTime * (1.0f / fadeTime);
-            yield return null;
-        }
-        fadeImage.gameObject.SetActive(false);
-    }
+            alpha += fadeSpeed * Time.deltaTime;
 
-    IEnumerator EndScene(string level)
-    {
-        fadeImage.gameObject.SetActive(true);
-        time = 0.0f;
-        yield return null;
-        while(time <= 1.0f)
-        {
-            fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, time);
-            time += Time.deltaTime * (1.0f / fadeTime);
-            yield return null;
+            GUI.color = new Color(0, 0, 0, alpha);
+
+            GUI.depth = fadeDepth;
+
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
+
+            if (alpha >= 1)
+            {
+                fadeOut = false;
+            }
         }
-        SceneManager.LoadScene(level, LoadSceneMode.Single);
-        StartCoroutine(StartScene());
     }
 }
