@@ -329,6 +329,8 @@ MonoBehaviour:
   stunLength: 0.5
   invulnLength: 1.5
   dust: {fileID: 0}
+  Michael: {fileID: 9100000, guid: f29283e23e577664fb9761513cbffa6e, type: 2}
+  Lucy: {fileID: 9100000, guid: 6ebebdd319164654a8cf89d1c0ad01ab, type: 2}
 --- !u!198 &198000011387455426
 ParticleSystem:
   m_ObjectHideFlags: 1

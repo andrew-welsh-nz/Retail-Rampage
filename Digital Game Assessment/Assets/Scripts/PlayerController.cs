@@ -24,9 +24,9 @@ public class PlayerController : MonoBehaviour {
     private ParticleSystem dust;
 
     [SerializeField]
-    Animator Michael;
+    RuntimeAnimatorController Michael;
     [SerializeField]
-    Animator Lucy;
+    RuntimeAnimatorController Lucy;
 
     AudioSource hitSound;
     bool stunned = false;
@@ -51,11 +51,11 @@ public class PlayerController : MonoBehaviour {
 
         if(P1UseMichael && playerPrefix == "P1_")
         {
-            anim = Michael;
+            anim.runtimeAnimatorController = Michael;
         }
         else if(P2UseLucy && playerPrefix == "P2_")
         {
-            anim = Lucy;
+            anim.runtimeAnimatorController = Lucy;
         }
 	}
 
