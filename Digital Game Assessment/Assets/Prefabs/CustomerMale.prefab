@@ -24,7 +24,6 @@ GameObject:
   - 50: {fileID: 50000010355241736}
   - 95: {fileID: 95000011294063706}
   - 61: {fileID: 61000010317067046}
-  - 82: {fileID: 82000010715614616}
   m_Layer: 0
   m_Name: CustomerMale
   m_TagString: Customer
@@ -43,6 +42,7 @@ GameObject:
   - 198: {fileID: 198000012753412504}
   - 199: {fileID: 199000011410989336}
   - 114: {fileID: 114000010088470196}
+  - 82: {fileID: 82000011672932694}
   m_Layer: 0
   m_Name: CustomerParticle
   m_TagString: Untagged
@@ -108,12 +108,12 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.75}
---- !u!82 &82000010715614616
+--- !u!82 &82000011672932694
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010021353378}
+  m_GameObject: {fileID: 1000014293397724}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243000014060171878, guid: a21ca050081c14b4aa263fae8543717b,
@@ -125,7 +125,7 @@ AudioSource:
   Loop: 0
   Mute: 0
   Spatialize: 0
-  Priority: 0
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

@@ -5,9 +5,14 @@ public class ParticleAutoDestroy : MonoBehaviour {
 
     ParticleSystem particle;
 
+    AudioSource sound;
+
 	// Use this for initialization
 	void Start () {
         particle = GetComponent<ParticleSystem>();
+        sound = GetComponent<AudioSource>();
+
+        sound.Play();
 	}
 	
 	// Update is called once per frame

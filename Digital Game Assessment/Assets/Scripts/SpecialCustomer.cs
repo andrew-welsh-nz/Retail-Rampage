@@ -10,6 +10,11 @@ public class SpecialCustomer : MonoBehaviour
     [SerializeField]
     private float salesDelay;
 
+    [SerializeField]
+    RuntimeAnimatorController Michael;
+    [SerializeField]
+    RuntimeAnimatorController Lucy;
+
     private int totalsales = 3;
 
     private bool canBuy = true;
@@ -21,11 +26,30 @@ public class SpecialCustomer : MonoBehaviour
 
     AudioSource sound;
 
+    Animator anim;
+
+    public static bool isLucy;
+
     void Start()
     {
         particles.gameObject.SetActive(false);
 
         sound = GetComponent<AudioSource>();
+
+        anim = GetComponent<Animator>();
+
+        if(isLucy)
+        {
+            anim.runtimeAnimatorController = Lucy;
+            Debug.Log("Lucy");
+            isLucy = false;
+        }
+        else
+        {
+            anim.runtimeAnimatorController = Michael;
+            Debug.Log("Michael");
+            isLucy = true;
+        }
     }
 
     // Update is called once per frame

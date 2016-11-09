@@ -7019,17 +7019,17 @@ Prefab:
     - target: {fileID: 61000012920416516, guid: 870d21f78ec39bb42bfad78e7c7e7a63,
         type: 2}
       propertyPath: m_Size.x
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 61000012920416516, guid: 870d21f78ec39bb42bfad78e7c7e7a63,
         type: 2}
       propertyPath: m_Size.y
-      value: 4.5
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 61000012920416516, guid: 870d21f78ec39bb42bfad78e7c7e7a63,
         type: 2}
       propertyPath: m_Offset.y
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 212000011959004286, guid: 870d21f78ec39bb42bfad78e7c7e7a63,
         type: 2}

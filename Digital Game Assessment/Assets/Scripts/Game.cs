@@ -45,6 +45,15 @@ public class Game : MonoBehaviour {
     {
         InvokeRepeating("SpawnCustomer", 10, customerDelay);
         InvokeRepeating("SpawnSpecialCustomer", specialCustomerDelay, specialCustomerDelay);
+
+        if(Random.value > 0.5f)
+        {
+            SpecialCustomer.isLucy = true;
+        }
+        else
+        {
+            SpecialCustomer.isLucy = false;
+        }
     }
 
     void Update()
