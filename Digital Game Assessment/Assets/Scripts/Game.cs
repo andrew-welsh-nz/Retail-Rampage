@@ -129,6 +129,7 @@ public class Game : MonoBehaviour {
     {
         yield return new WaitForSeconds(_delay);
         Time.timeScale = 1.0f;
+        audio.Stop();
         audio.pitch = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }
