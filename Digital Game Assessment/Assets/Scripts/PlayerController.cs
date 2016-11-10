@@ -151,12 +151,12 @@ public class PlayerController : MonoBehaviour {
                     {
                         if(col.transform.position.x > this.transform.position.x)
                         {
-                            anim.SetBool("WasHit", true);
+                            anim.SetTrigger("WasHit");
                             anim.SetBool("HitDirection", true);
                         }
                         else if(col.transform.position.x < this.transform.position.x)
                         {
-                            anim.SetBool("WasHit", true);
+                            anim.SetTrigger("WasHit");
                             anim.SetBool("HitDirection", false);
                         }
 
