@@ -21,7 +21,7 @@ public class GameStart : MonoBehaviour {
 	void Update () {
         if(POneReady && PTwoReady)
         {
-            StartCoroutine(WaitAndStart(2.5f));
+            StartCoroutine(WaitAndStart(0.5f));
         }
 	}
 
@@ -53,6 +53,7 @@ public class GameStart : MonoBehaviour {
         {
             if(Destination == "QUIT")
             {
+                Debug.Log("Quitting");
                 Application.Quit();
             }
             else

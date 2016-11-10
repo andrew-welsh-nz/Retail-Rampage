@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     RuntimeAnimatorController Lucy;
 
+    [SerializeField]
+    RuntimeAnimatorController DefaultBlue;
+    [SerializeField]
+    RuntimeAnimatorController DefaultOrange;
+
     AudioSource hitSound;
     bool stunned = false;
     bool invuln = false;
@@ -67,6 +72,23 @@ public class PlayerController : MonoBehaviour {
     void Update()
     {
         GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+
+        if(P1UseMichael && playerPrefix == "P1_")
+        {
+            anim.runtimeAnimatorController = Michael;
+        }
+        else if (!P1UseMichael && playerPrefix == "P1_")
+        {
+            anim.runtimeAnimatorController = DefaultBlue;
+        }
+        else if (P2UseLucy && playerPrefix == "P2_")
+        {
+            anim.runtimeAnimatorController = Lucy;
+        }
+        else if (!P2UseLucy && playerPrefix == "P2_")
+        {
+            anim.runtimeAnimatorController = DefaultOrange;
+        }
 
         if (!stunned)
         {
