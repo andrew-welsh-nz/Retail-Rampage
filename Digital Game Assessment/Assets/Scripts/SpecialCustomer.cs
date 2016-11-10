@@ -24,8 +24,6 @@ public class SpecialCustomer : MonoBehaviour
 
     public Game game;
 
-    AudioSource sound;
-
     Animator anim;
 
     public static bool isLucy;
@@ -33,8 +31,6 @@ public class SpecialCustomer : MonoBehaviour
     void Start()
     {
         particles.gameObject.SetActive(false);
-
-        sound = GetComponent<AudioSource>();
 
         anim = GetComponent<Animator>();
 
@@ -69,8 +65,6 @@ public class SpecialCustomer : MonoBehaviour
     {
         if (col.gameObject.tag == "Interact" && canBuy)
         {
-            sound.Play();
-
             particles.gameObject.SetActive(true);
 
             particles.Emit(5);
