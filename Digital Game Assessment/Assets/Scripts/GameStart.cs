@@ -12,8 +12,10 @@ public class GameStart : MonoBehaviour {
     [SerializeField]
     string Destination = "1v1";
 
-	// Use this for initialization
-	void Start () {
+    public ScreenTransition fade;
+
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -51,15 +53,27 @@ public class GameStart : MonoBehaviour {
 
         if (POneReady && PTwoReady)
         {
-            if(Destination == "QUIT")
-            {
-                Debug.Log("Quitting");
-                Application.Quit();
-            }
-            else
-            {
-                SceneManager.LoadScene(Destination);
-            }
+            fade.fadeOut = true;
+
+            StartCoroutine(WaitForFade(1.2f));
+
+            
         }
+    }
+
+    IEnumerator WaitForFade(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+
+        if (Destination == "QUIT")
+        {
+            Debug.Log("Quitting");
+            Application.Quit();
+        }
+        else
+        {
+            SceneManager.LoadScene(Destination);
+        }
+
     }
 }

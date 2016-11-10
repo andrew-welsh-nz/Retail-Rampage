@@ -14,17 +14,22 @@ public class ScreenTransition : MonoBehaviour {
 
     public float alpha = 1.0f;
 
-    void OnGUI()
+    void Start()
+    {
+        fadeIn = true;
+    }
+
+    void Update()
     {
         if(fadeIn)
         {
             alpha -= fadeSpeed * Time.deltaTime;
 
-            GUI.color = new Color(0, 0, 0, alpha);
+            //GUI.color = new Color(0, 0, 0, alpha);
 
-            GUI.depth = fadeDepth;
+            //GUI.depth = fadeDepth;
 
-            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
+            //GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
 
             if(alpha <= 0)
             {
@@ -35,11 +40,9 @@ public class ScreenTransition : MonoBehaviour {
         {
             alpha += fadeSpeed * Time.deltaTime;
 
-            GUI.color = new Color(0, 0, 0, alpha);
+            
 
-            GUI.depth = fadeDepth;
-
-            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
+            //GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
 
             if (alpha >= 1)
             {
@@ -47,4 +50,14 @@ public class ScreenTransition : MonoBehaviour {
             }
         }
     }
+
+    void OnGUI()
+    {
+        GUI.color = new Color(0, 0, 0, alpha);
+
+        GUI.depth = fadeDepth;
+
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
+    }
+    
 }

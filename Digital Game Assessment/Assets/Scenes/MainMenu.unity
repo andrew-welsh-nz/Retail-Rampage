@@ -204,6 +204,7 @@ MonoBehaviour:
   POneReady: 0
   PTwoReady: 0
   Destination: 1v1
+  fade: {fileID: 164037365}
 --- !u!1 &98160696 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011560416764, guid: 870d21f78ec39bb42bfad78e7c7e7a63,
@@ -1555,6 +1556,7 @@ MonoBehaviour:
   POneReady: 0
   PTwoReady: 0
   Destination: Credits
+  fade: {fileID: 164037365}
 --- !u!61 &532767134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4034,6 +4036,7 @@ MonoBehaviour:
   POneReady: 0
   PTwoReady: 0
   Destination: QUIT
+  fade: {fileID: 164037365}
 --- !u!212 &1451100585
 SpriteRenderer:
   m_ObjectHideFlags: 0

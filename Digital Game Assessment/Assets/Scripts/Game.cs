@@ -77,8 +77,7 @@ public class Game : MonoBehaviour {
                 }
             }
 
-            fade.fadeOut = true;
-            fade.alpha = 0.0f;
+            StartCoroutine(WaitAndFade(0.75f));
 
             StartCoroutine(WaitAndLeave(2));
         }
@@ -96,8 +95,7 @@ public class Game : MonoBehaviour {
                 }
             }
 
-            fade.fadeOut = true;
-            fade.alpha = 0.0f;
+            StartCoroutine(WaitAndFade(0.5f));
 
             StartCoroutine(WaitAndLeave(2));
         }
@@ -168,5 +166,11 @@ public class Game : MonoBehaviour {
         sound.Stop();
         sound.pitch = 1.0f;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    IEnumerator WaitAndFade(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+        fade.fadeOut = true;
     }
 }

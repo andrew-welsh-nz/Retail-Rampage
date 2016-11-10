@@ -11,6 +11,9 @@ public class SpecialCustomer : MonoBehaviour
     private float salesDelay;
 
     [SerializeField]
+    private GameObject loading;
+
+    [SerializeField]
     RuntimeAnimatorController Michael;
     [SerializeField]
     RuntimeAnimatorController Lucy;
@@ -30,6 +33,8 @@ public class SpecialCustomer : MonoBehaviour
 
     void Start()
     {
+        loading.SetActive(false);
+
         particles.gameObject.SetActive(false);
 
         anim = GetComponent<Animator>();
@@ -77,6 +82,7 @@ public class SpecialCustomer : MonoBehaviour
             totalsales -= 1;
 
             canBuy = false;
+            loading.SetActive(true);
             StartCoroutine(Wait(salesDelay));        
         }
     }
@@ -87,6 +93,7 @@ public class SpecialCustomer : MonoBehaviour
         if(!canBuy)
         {
             canBuy = true;
+            loading.SetActive(false);
         }
     }
 }
