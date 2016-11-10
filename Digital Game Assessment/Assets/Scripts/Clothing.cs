@@ -73,7 +73,7 @@ public class Clothing : MonoBehaviour {
                 {
                     if(!isBeingCarried)
                     {
-                        StartCoroutine(FreezeGame(0.05f));
+                        StartCoroutine(FreezeGame(0.025f));
                         hitSound.Play();
                         rb.AddForce(new Vector2((transform.position.x - col.gameObject.transform.position.x), (transform.position.y - col.gameObject.transform.position.y)) * knockback * 100, ForceMode2D.Impulse);
                         screenShakeCam.Shake(shakeSize);
