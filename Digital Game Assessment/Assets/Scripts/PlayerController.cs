@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour {
     static bool P2UseLucy;
 
     bool CanChange = true;
+    bool CanDash = true;
 
     // Use this for initialization
     void Start () {
@@ -150,6 +151,11 @@ public class PlayerController : MonoBehaviour {
 
                 anim.SetBool("IsHitting", true);
                 StartCoroutine(HitAnimPause(0.25f));
+            }
+
+            if(Input.GetAxis(playerPrefix + "Dash") == 1 && CanDash)
+            {
+                StartCoroutine(Dash(0.1f));
             }
 
             if (isCarrying)
@@ -314,6 +320,22 @@ public class PlayerController : MonoBehaviour {
         CanChange = false;
         yield return new WaitForSeconds(_delay);
         CanChange = true;
+    }
+
+    IEnumerator Dash(float _delay)
+    {
+        maxSpeed *= 1.2f;
+        yield return new WaitForSeconds(_delay);
+        maxSpeed /= 1.2f;
+        CanDash = false;
+        StartCoroutine(DashCooldown(1));
+    }
+
+
+    IEnumerator DashCooldown(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+        CanDash = true;
     }
 
     public Store GetStore()
