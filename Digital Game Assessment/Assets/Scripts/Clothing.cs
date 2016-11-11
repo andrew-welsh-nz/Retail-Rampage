@@ -15,6 +15,9 @@ public class Clothing : MonoBehaviour {
     [SerializeField]
     private float shakeSize;
 
+    [SerializeField]
+    private float scaleSize;
+
     AudioSource hitSound;
     Rigidbody2D rb;
     bool isBeingCarried = false;
@@ -29,7 +32,7 @@ public class Clothing : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Vector3 scale = new Vector3(0.1f, 0.1f, 1f);
+        Vector3 scale = new Vector3(scaleSize, scaleSize, 1f);
 
         transform.localScale = scale;
 
@@ -88,21 +91,27 @@ public class Clothing : MonoBehaviour {
                         isBeingCarried = false;
                         transform.position = home.transform.position;
                         transform.rotation = startRotation;
-                        owner.storeOwner.isCarrying = false;
+                        if(owner != null)
+                        {
+                            owner.storeOwner.isCarrying = false;
+                        }
                     }
                 }
                 break;
             case "PickupTrigger":
                 {
-                    if(col.gameObject.GetInstanceID() == owner.storeOwner.pickupTrigger.GetInstanceID())
+                    if(owner != null)
                     {
-                        if(owner.storeOwner.isCarrying == false)
+                        if (col.gameObject.GetInstanceID() == owner.storeOwner.pickupTrigger.GetInstanceID())
                         {
-                            if (transform.position != home.transform.position)
+                            if (owner.storeOwner.isCarrying == false)
                             {
-                                isBeingCarried = true;
-                                owner.storeOwner.isCarrying = true;
-                                transform.rotation = startRotation;
+                                if (transform.position != home.transform.position)
+                                {
+                                    isBeingCarried = true;
+                                    owner.storeOwner.isCarrying = true;
+                                    transform.rotation = startRotation;
+                                }
                             }
                         }
                     }

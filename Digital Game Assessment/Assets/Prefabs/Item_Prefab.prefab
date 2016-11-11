@@ -167,6 +167,7 @@ MonoBehaviour:
   home: {fileID: 0}
   screenShakeCam: {fileID: 0}
   shakeSize: 0.1
+  scaleSize: 0.1
   spriteNormal: {fileID: 0}
   spriteOffPosition: {fileID: 0}
 --- !u!212 &212000011451238982
