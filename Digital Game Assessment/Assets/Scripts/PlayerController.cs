@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour {
     bool invuln = false;
     Rigidbody2D rb;
     Animator anim;
+    SpriteRenderer spriteRenderer;
 
     [SerializeField]
     static bool P1UseMichael;
@@ -57,8 +58,9 @@ public class PlayerController : MonoBehaviour {
 
         hitSound = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
-        if(P1UseMichael && playerPrefix == "P1_")
+        if (P1UseMichael && playerPrefix == "P1_")
         {
             anim.runtimeAnimatorController = Michael;
         }
@@ -71,7 +73,7 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+        spriteRenderer.sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
 
         if(P1UseMichael && playerPrefix == "P1_")
         {
@@ -93,7 +95,11 @@ public class PlayerController : MonoBehaviour {
         if (!stunned)
         {
             rb.velocity = new Vector2(Input.GetAxis(playerPrefix + "Horizontal") * maxSpeed, Input.GetAxis(playerPrefix + "Vertical") * maxSpeed);
-            if (Input.GetAxis(playerPrefix + "Horizontal") < 0)
+
+            var horizontalAxis = Input.GetAxis(playerPrefix + "Horizontal");
+            var verticalAxis = Input.GetAxis(playerPrefix + "Vertical");
+
+            if (horizontalAxis < 0)
             {
                 if (!dust.isPlaying)
                 {
@@ -103,7 +109,7 @@ public class PlayerController : MonoBehaviour {
                 anim.SetBool("LastFacing", false);
                 dust.transform.rotation = Quaternion.AngleAxis(90, Vector3.up);
             }
-            else if (Input.GetAxis(playerPrefix + "Horizontal") > 0)
+            else if (horizontalAxis > 0)
             {
                 if (!dust.isPlaying)
                 {
@@ -113,7 +119,7 @@ public class PlayerController : MonoBehaviour {
                 anim.SetBool("LastFacing", true);
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
             }
-            else if (Input.GetAxis(playerPrefix + "Vertical") > 0)
+            else if (verticalAxis > 0)
             {
                 if (!dust.isPlaying)
                 {
@@ -124,7 +130,7 @@ public class PlayerController : MonoBehaviour {
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.left);
             }
-            else if (Input.GetAxis(playerPrefix + "Vertical") < 0)
+            else if (verticalAxis < 0)
             {
                 if (!dust.isPlaying)
                 {
@@ -135,7 +141,7 @@ public class PlayerController : MonoBehaviour {
                 dust.transform.rotation = Quaternion.AngleAxis(-90, Vector3.up);
                 dust.transform.rotation = Quaternion.AngleAxis(90, Vector3.left);
             }
-            else if (Input.GetAxis(playerPrefix + "Horizontal") == 0 && Input.GetAxis(playerPrefix + "Vertical") == 0)
+            else if (horizontalAxis == 0 && verticalAxis == 0)
             {
                 anim.SetInteger("Facing", 0);
                 dust.Stop();

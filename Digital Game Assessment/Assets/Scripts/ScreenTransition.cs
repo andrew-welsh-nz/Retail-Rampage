@@ -25,12 +25,6 @@ public class ScreenTransition : MonoBehaviour {
         {
             alpha -= fadeSpeed * Time.deltaTime;
 
-            //GUI.color = new Color(0, 0, 0, alpha);
-
-            //GUI.depth = fadeDepth;
-
-            //GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
-
             if(alpha <= 0)
             {
                 fadeIn = false;
@@ -39,10 +33,6 @@ public class ScreenTransition : MonoBehaviour {
         else if(fadeOut)
         {
             alpha += fadeSpeed * Time.deltaTime;
-
-            
-
-            //GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeTexture);
 
             if (alpha >= 1)
             {

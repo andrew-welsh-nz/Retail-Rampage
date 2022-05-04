@@ -23,7 +23,7 @@ public class Clothing : MonoBehaviour {
     bool isBeingCarried = false;
     Quaternion startRotation;
 
-    SpriteRenderer spriteRender;
+    SpriteRenderer spriteRenderer;
 
     [SerializeField]
     Sprite spriteNormal;
@@ -39,9 +39,9 @@ public class Clothing : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         hitSound = GetComponent<AudioSource>();
         startRotation = transform.rotation;
-        spriteRender = GetComponent <SpriteRenderer>();
+        spriteRenderer = GetComponent <SpriteRenderer>();
 
-        spriteRender.sprite = spriteNormal;
+        spriteRenderer.sprite = spriteNormal;
     }
 	
 	// Update is called once per frame
@@ -50,21 +50,21 @@ public class Clothing : MonoBehaviour {
 
         if (isBeingCarried)
         {
-            spriteRender.sprite = spriteNormal;
-            GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt((transform.position.y * 100f) - 50) * -1;
+            spriteRenderer.sprite = spriteNormal;
+            spriteRenderer.sortingOrder = Mathf.RoundToInt((transform.position.y * 100f) - 50) * -1;
             this.transform.position = owner.storeOwner.transform.position;
         }
         else
         {
             if(!isCorrectPosition)
             {
-                spriteRender.sprite = spriteOffPosition;
+                spriteRenderer.sprite = spriteOffPosition;
             }
             else
             {
-                spriteRender.sprite = spriteNormal;
+                spriteRenderer.sprite = spriteNormal;
             }
-            GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+            spriteRenderer.sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
         }
     }
 

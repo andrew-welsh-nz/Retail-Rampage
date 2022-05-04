@@ -28,6 +28,7 @@ public class SpecialCustomer : MonoBehaviour
     public Game game;
 
     Animator anim;
+    SpriteRenderer spriteRenderer;
 
     public static bool isLucy;
 
@@ -38,6 +39,7 @@ public class SpecialCustomer : MonoBehaviour
         particles.gameObject.SetActive(false);
 
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         if(isLucy)
         {
@@ -56,7 +58,7 @@ public class SpecialCustomer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+        spriteRenderer.sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
 
         if(totalsales <= 0)
         {

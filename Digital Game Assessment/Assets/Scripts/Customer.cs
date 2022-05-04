@@ -22,17 +22,19 @@ public class Customer : MonoBehaviour {
     bool canMove = true;
 
     Animator anim;
+    SpriteRenderer spriteRenderer;
 	
     void Start()
     {
         particles.gameObject.SetActive(false);
 
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 	// Update is called once per frame
 	void Update () {
-        GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+        spriteRenderer.sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
 
         if (currentPathPosition < this.path.Length)
         {
